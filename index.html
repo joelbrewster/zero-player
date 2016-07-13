@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>zero-player</title>
-    <script type="text/javascript" src="app.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Monome App</title>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
     <script type="text/javascript" src="nexusUI.js"></script>
     <script type="text/javascript" src="tone.js"></script>
-    <body>
-    </body>
+  </head>
+  <body>
+
+    <canvas nx="matrix" id="beatmatrix" style="width:600px;height:520px;margin:10px auto 0px"></canvas>
+
+    <script>
+
+nx.onload = function() {
+
+  nx.colorize("accent", "#D7FC89");
+  nx.colorize("fill", "#252525");
+}
+
+nx.sendsTo(function(data) {
+  console.log(data);
+})
+    </script>
+
+    <style>
+
+body {
+  background-color:#0e0e0e;
+}
+    .nx {
+      display:block;
+    }
+
+    .note {
+      width:700px;
+      margin:0 auto;
+      padding:10px 2px 0px;
+      box-sizing:border-box;
+    }
+
+    a {
+      color:#0be;
+
+    }
+    </style>
+  </body>
 
 </html>
+
