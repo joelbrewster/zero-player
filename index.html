@@ -13,6 +13,41 @@
 
     <script>
 
+var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
+
+var filter = new Tone.Filter(800, "lowpass").connect(ping);
+
+//a polysynth composed of 6 Voices of MonoSynth
+var synth = new Tone.PolySynth(4, Tone.MonoSynth).connect(filter);
+//set the attributes using the set interface
+synth.set({
+  volume: -35,
+  oscillator:{
+    type:"sawtooth6"
+  },
+  filter:{
+    Q:3,
+    type:"allpass",
+    rolloff:-24
+  },
+  envelope:{
+    attack:0.3,
+    decay:0,
+    sustain:1,
+    release:0.3
+  },
+  filterEnvelope:{
+    attack:0.2,
+    decay:0,
+    sustain:1,
+    release:0.2,
+    min:20,
+    max:20,
+    exponent:2,
+  }
+});
+
+
 nx.onload = function() {
 
   nx.colorize("accent", "#D7FC89");
