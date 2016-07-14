@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -53,13 +52,14 @@ synth.set({
 });
 
 nx.onload = function() {
+
   nx.colorize("accent", "#D7FC89");
   nx.colorize("fill", "#252525");
 
   matrix1.col = 8;
   matrix1.row = 8;
   matrix1.init();
-
+  setInterval(matrix1.life,80);
 
   matrix1.on('*',function(data) {
     synth.set("detune",~~(Math.random()*10-5));
@@ -90,7 +90,12 @@ nx.onload = function() {
     }
   });
   <!-- matrix1.matrix[1][2] = 1; -->
-    matrix1.draw()
+  matrix1.draw()
+
+  <!-- nx.sendsTo(function(data) { -->
+  <!--   send data to monome -->
+  <!-- }) -->
+
   envelope1.on('*',function(data) {
     if (data.amp) {
       filter.frequency.value = data.amp * 2000;
@@ -113,6 +118,7 @@ nx.onload = function() {
 
 };
     </script>
+
   </head>
 
         <body>
@@ -138,7 +144,7 @@ body {
       color:#0be;
 
     }
-    </style>
-  </body>
+          </style>
+        </body>
 
 </html>
