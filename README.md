@@ -24,3 +24,19 @@ Many different types of patterns occur in the Game of Life, including still life
 ![Boat](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Game_of_life_boat.svg/164px-Game_of_life_boat.svg.png)
 ![Block](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/132px-Game_of_life_block_with_border.svg.png)
 
+
+Major problems
+```
+if (data.grid[i][j])
+
+```
+would return an object, not the grid[i][j]
+I presumed it'd be true, but it would return undefined, 0, and all the things I can do to the array.
+
+
+```
+if (data.grid[i][j] == 1)
+```
+
+
+
