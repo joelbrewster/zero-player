@@ -68,8 +68,22 @@ nx.onload = function() {
       for (var i=0;i<data.grid.length;i++) {
         for (var j=0;j<data.grid[i].length;j++) {
 
-          if (data.grid[i][j]) {
+          if (data.grid[i][j] == 1) {
             synth.triggerAttackRelease((j+1)*(i+1)*33, .42);
+            //console.log(i,j);
+          }
+          if(data.grid[i][j] != monoGrid[i][j]){
+            // do mono stuff
+            if(data.grid[i][j] == 1) {
+              // turnOn monome
+              console.log("ON", i, j);
+              monoGrid[i][j] = 1;
+            }
+            if(data.grid[i][j] == 0){
+              // turnOff monome
+              monoGrid[i][j] = 0;
+              console.log("OFF", i, j);
+            }
           }
         }
       }
