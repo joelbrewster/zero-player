@@ -6,58 +6,26 @@
     <!-- <script type="text/javascript" src="app.js"></script> -->
     <script type="text/javascript" src="nexusUI.js"></script>
     <script type="text/javascript" src="tone.js"></script>
-  </head>
-  <body>
 
-    <canvas nx="matrix" id="beatmatrix" style="width:600px;height:520px;margin:10px auto 0px"></canvas>
 
     <script>
 
-var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
-
-var filter = new Tone.Filter(800, "lowpass").connect(ping);
-
-//a polysynth composed of 6 Voices of MonoSynth
-var synth = new Tone.PolySynth(4, Tone.MonoSynth).connect(filter);
-//set the attributes using the set interface
-synth.set({
-  volume: -35,
-  oscillator:{
-    type:"sawtooth6"
-  },
-  filter:{
-    Q:3,
-    type:"allpass",
-    rolloff:-24
-  },
-  envelope:{
-    attack:0.3,
-    decay:0,
-    sustain:1,
-    release:0.3
-  },
-  filterEnvelope:{
-    attack:0.2,
-    decay:0,
-    sustain:1,
-    release:0.2,
-    min:20,
-    max:20,
-    exponent:2,
-  }
-});
-
-
 nx.onload = function() {
 
-  nx.colorize("accent", "#D7FC89");
-  nx.colorize("fill", "#252525");
+  <!-- matrix1.row = 8; -->
+    <!-- matrix1.col = 8; -->
+    <!-- matrix1.init(); -->
+
+    <!-- matrix1.draw(); -->
+
 }
 
-nx.sendsTo(function(data) {
-  console.log(data);
-})
     </script>
+  </head>
+  <body>
+
+    <canvas nx="matrix"></canvas>
+    <canvas nx="matrix" id="beatmatrix"></canvas>
 
     <style>
 
@@ -83,4 +51,3 @@ body {
   </body>
 
 </html>
-
