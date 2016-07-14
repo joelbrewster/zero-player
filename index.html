@@ -8,6 +8,16 @@
     <script type="text/javascript" src="tone.js"></script>
     <script>
 
+    // gobal variable monoGrid
+    var monoGrid = new Array(8);
+
+    // init monoGrid... maybe move to init function when have one
+    for(var i=0, n=8; i<n; i++){
+      monoGrid[i] = new Array(8);
+      for(var j=0, m=8; j<m; j++){
+        monoGrid[i][j] = 0;
+      }
+    }
 var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
 
 var filter = new Tone.Filter(800, "lowpass").connect(ping);
