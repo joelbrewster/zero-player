@@ -67,7 +67,27 @@ nx.onload = function() {
   });
   <!-- matrix1.matrix[1][2] = 1; -->
     matrix1.draw()
-}
+  envelope1.on('*',function(data) {
+    if (data.amp) {
+      filter.frequency.value = data.amp * 2000;
+      <!-- console.log(data.amp); -->
+    }
+  });
+
+  envelope1.val.points = [
+  { x: 0.0, y: 0.0 },
+  { x: 0.1, y: 0.8 },
+  { x: 0.4, y: 0.8 },
+  { x: 0.6, y: 0.6 },
+  { x: 0.8, y: 0.4 },
+  { x: 1.0, y: 0.0 }
+  ];
+  envelope1.draw();
+  envelope1.looping = true;
+  envelope1.duration = 8192;
+  envelope1.start();
+
+};
     </script>
   </head>
 
