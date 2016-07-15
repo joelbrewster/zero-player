@@ -1,12 +1,11 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Monome App</title>
-    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <title>Zero-player</title>
+    <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="nexusUI.js"></script>
     <script type="text/javascript" src="tone.js"></script>
     <script>
-
     // gobal variable monoGrid
     var monoGrid = new Array(8);
 
@@ -54,6 +53,7 @@ synth.set({
 nx.onload = function() {
 
   nx.colorize("accent", "#D7FC89");
+  nx.colorize("border", "#000000");
   nx.colorize("fill", "#252525");
 
   matrix1.col = 8;
@@ -77,12 +77,16 @@ nx.onload = function() {
             if(data.grid[i][j] == 1) {
               // turnOn monome
               console.log("ON", i, j);
+              <!-- Send data to monome - What's the path? -->
+              nx.transmit( data );
               monoGrid[i][j] = 1;
             }
             if(data.grid[i][j] == 0){
               // turnOff monome
               monoGrid[i][j] = 0;
               console.log("OFF", i, j);
+              nx.transmit( data );
+              <!-- Send data to monome - What's the path? -->
             }
           }
         }
