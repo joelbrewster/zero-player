@@ -2,7 +2,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Zero-player</title>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
     <script type="text/javascript" src="nexusUI.js"></script>
     <script type="text/javascript" src="tone.js"></script>
     <script>
@@ -78,14 +78,14 @@ nx.onload = function() {
               // turnOn monome
               console.log("ON", i, j);
               <!-- Send data to monome - What's the path? -->
-              nx.transmit( data );
+              matrix1.transmit(i,j);
               monoGrid[i][j] = 1;
             }
             if(data.grid[i][j] == 0){
               // turnOff monome
               monoGrid[i][j] = 0;
               console.log("OFF", i, j);
-              nx.transmit( data );
+              monoGrid[i][j] = 0;
               <!-- Send data to monome - What's the path? -->
             }
           }
