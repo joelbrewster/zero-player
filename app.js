@@ -8,6 +8,12 @@ for(var i=0, n=8; i<n; i++){
     monoGrid[i][j] = 0;
   }
 }
+//key listener
+
+
+
+
+// end
 var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
 
 var filter = new Tone.Filter(1000, "lowpass").connect(ping);
@@ -84,18 +90,42 @@ nx.onload = function() {
     }
   });
 
-  <!-- matrix1.matrix[1][2] = 1; -->
-  <!-- matrix1.sendsTo("/grid/key"); -->
+  // Keyboard input
+
+window.addEventListener("keydown", checkKeyPressed, false);
+  function checkKeyPressed(e) {
+
+    if (e.keyCode == "49") {
+      console.log("1 was pressed");
+      matrix1.matrix[0][0] = 1;
+    }
+
+    if (e.keyCode == "81") {
+      console.log("q was pressed");
+      matrix1.matrix[0][0] = 1;
+      matrix1.matrix[0][0] = 1;
+    }
+
+    if (e.keyCode == "65") {
+      console.log("a was pressed");
+      matrix1.matrix[2][0] = 1;
+      matrix1.matrix[2][0] = 1;
+    }
+
+  }
+
+  // matrix1.matrix[1][2] = 1;
+  // matrix1.sendsTo("/grid/key");
   matrix1.draw();
 
-  <!-- nx.sendsTo(function(data) { -->
-  <!--   send data to monome -->
-  <!-- }) -->
+  nx.sendsTo(function(data) {
+    // send data to monome
+  });
 
   envelope1.on('*',function(data) {
     if (data.amp) {
       filter.frequency.value = data.amp * 2000;
-      <!-- console.log(data.amp); -->
+      console.log(data.amp);
     }
   });
 
