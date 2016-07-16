@@ -18,7 +18,7 @@
     }
 var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
 
-var filter = new Tone.Filter(800, "lowpass").connect(ping);
+var filter = new Tone.Filter(1000, "lowpass").connect(ping);
 
 //a polysynth composed of 6 Voices of MonoSynth
 var synth = new Tone.PolySynth(4, Tone.MonoSynth).connect(filter);
@@ -76,25 +76,25 @@ nx.onload = function() {
             // do mono stuff
             if(data.grid[i][j] == 1) {
               // turnOn monome
-              console.log("ON", i, j);
-              <!-- Send data to monome - What's the path? -->
+              console.log(i, j, 1);
               matrix1.transmit(i,j);
               monoGrid[i][j] = 1;
             }
             if(data.grid[i][j] == 0){
               // turnOff monome
               monoGrid[i][j] = 0;
-              console.log("OFF", i, j);
+              console.log(i, j, 0);
               monoGrid[i][j] = 0;
-              <!-- Send data to monome - What's the path? -->
             }
           }
         }
       }
     }
   });
+
   <!-- matrix1.matrix[1][2] = 1; -->
-  matrix1.draw()
+  <!-- matrix1.sendsTo("/grid/key"); -->
+  matrix1.draw();
 
   <!-- nx.sendsTo(function(data) { -->
   <!--   send data to monome -->
@@ -125,30 +125,26 @@ nx.onload = function() {
 
   </head>
 
-        <body>
-          <canvas nx="envelope"style="width:800px;height:80px;margin:10px auto"></canvas>
-          <canvas nx="matrix" style="width:700px;height:600px;margin:4% auto 0px"></canvas>
-          <style>
+  <body>
+    <div class="page">
+      <canvas nx="envelope"style="width:515px;height:60px;margin:2px auto 0"></canvas>
+      <canvas nx="matrix" style="width:520px;height:470px;margin:2px auto"></canvas>
+    </div>
+  <style>
 
-body {
-  background-color:#0e0e0e;
-}
+    body {
+      background-color:#0e0e0e;
+    }
     .nx {
       display:block;
+      align: center;
     }
-
-    .note {
-      width:700px;
-      margin:0 auto;
-      padding:10px 2px 0px;
-      box-sizing:border-box;
+    .page {
+      position: relative;
+      top: 30%;
+      transform: translateY(-30%);
     }
-
-    a {
-      color:#0be;
-
-    }
-          </style>
-        </body>
+  </style>
+</body>
 
 </html>
