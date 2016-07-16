@@ -561,12 +561,15 @@ var widget = module.exports = function (target) {
   /**  @property {string} canvasID ID attribute of the interface's HTML5 canvas */
   this.canvasID = target;
   /**  @property {string} oscPath OSC prefix for this interface. By default this is populated using the canvas ID (i.e. an ID of dial1 has OSC path /dial1) */
-  this.oscPath = "/"+target;
-  if (!document.getElementById(target)) {
-    var newcanv = document.createElement("canvas")
-    newcanv.id = target;
-    document.body.appendChild(newcanv)
-  }
+  this.oscPath = "/Max";
+  //Commented out
+  // I Just need it to go to the monome
+  // this.oscPath = "/"+target;
+  // if (!document.getElementById(target)) {
+  //   var newcanv = document.createElement("canvas")
+  //   newcanv.id = target;
+  //   document.body.appendChild(newcanv)
+  // }
   /**
    * @property {string} type The type of NexusUI widget (i.e. "dial", "toggle", "slider"). Set automatically at creation.
    */
