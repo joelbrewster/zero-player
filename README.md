@@ -53,11 +53,12 @@ if (data.grid[i][j] == 1)
 ## Keyboard input
 ```
 window.addEventListener("keydown", checkKeyPressed, false);
+
 function checkKeyPressed(e) {
 
   if (e.keyCode == "49") {
     console.log("1 was pressed");
-    return matrix1.matrix[0][0] = 1;
+    matrix1.matrix[0][0] = 1;
   }
 }
 ```
