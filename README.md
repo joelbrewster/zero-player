@@ -25,7 +25,18 @@ Many different types of patterns occur in the Game of Life, including still life
 ![Block](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/132px-Game_of_life_block_with_border.svg.png)
 
 
-Major problems
+## Scope
+I wanted to create an interesting spin on Conway's Game of Life and use hardware to interface with it. It needed to be controlled via something tangible. It needed to give the user visual and auditory feedback. It needed to be simple and straight forward to set up. It needed to be part of the open source monome community.
+
+The overall goal was to make the user be able to interface with the app without instructions and just play.
+
+
+## Code
+nexusUI
+tone.js
+
+
+## Roadblocks
 ```
 if (data.grid[i][j])
 
