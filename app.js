@@ -1,4 +1,17 @@
 // gobal variable monoGrid
+
+
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(e) {
+
+  if (e.keyCode == "49") {
+    console.log("1 was pressed");
+    // This isn't triggering the grid
+    matrix1.matrix[0][0] = 1;
+  }
+}
+
 var monoGrid = new Array(8);
 
 // init monoGrid... maybe move to init function when have one
@@ -8,6 +21,7 @@ for(var i=0, n=8; i<n; i++){
     monoGrid[i][j] = 0;
   }
 }
+
 var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
 
 var filter = new Tone.Filter(1000, "lowpass").connect(ping);
@@ -61,7 +75,7 @@ nx.onload = function() {
         for (var j=0;j<data.grid[i].length;j++) {
 
           if (data.grid[i][j] == 1) {
-            synth.triggerAttackRelease((j+1)*(i+1)*33, .42);
+            synth.triggerAttackRelease((j+1)*(i+1)*33, 0.42);
             //console.log(i,j);
           }
           if(data.grid[i][j] != monoGrid[i][j]){
@@ -72,7 +86,7 @@ nx.onload = function() {
               matrix1.transmit(i,j);
               monoGrid[i][j] = 1;
             }
-            if(data.grid[i][j] == 0){
+            if(data.grid[i][j] === 0){
               // turnOff monome
               monoGrid[i][j] = 0;
               console.log(i, j, 0);
@@ -84,32 +98,28 @@ nx.onload = function() {
     }
   });
 
-  <!-- matrix1.matrix[1][2] = 1; -->
-  <!-- matrix1.sendsTo("/grid/key"); -->
+  // matrix1.matrix[1][2] = 1;
+  // matrix1.sendsTo("/grid/key");
   matrix1.draw();
 
-  <!-- nx.sendsTo(function(data) { -->
-  <!--   send data to monome -->
-  <!-- }) -->
+envelope1.on('*',function(data) {
+  if (data.amp) {
+    filter.frequency.value = data.amp * 2000;
+  }
+});
 
-  envelope1.on('*',function(data) {
-    if (data.amp) {
-      filter.frequency.value = data.amp * 2000;
-      <!-- console.log(data.amp); -->
-    }
-  });
+envelope1.val.points = [
+  { x: 0.0, y: 0.0 },
+  { x: 0.1, y: 0.8 },
+  { x: 0.4, y: 0.8 },
+  { x: 0.6, y: 0.6 },
+  { x: 0.8, y: 0.4 },
+  { x: 1.0, y: 0.0 }
+  ];
+  envelope1.draw();
+  envelope1.looping = true;
+  envelope1.duration = 8192;
+  envelope1.start();
 
-  envelope1.val.points = [
-    { x: 0.0, y: 0.0 },
-    { x: 0.1, y: 0.8 },
-    { x: 0.4, y: 0.8 },
-    { x: 0.6, y: 0.6 },
-    { x: 0.8, y: 0.4 },
-    { x: 1.0, y: 0.0 }
-    ];
-    envelope1.draw();
-    envelope1.looping = true;
-    envelope1.duration = 8192;
-    envelope1.start();
+};
 
-  };
