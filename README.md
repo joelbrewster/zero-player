@@ -37,17 +37,33 @@ tone.js
 
 
 ## Roadblocks
-```
+  ```
 if (data.grid[i][j])
 
-```
-would return an object, not the grid[i][j]
-I presumed it'd be true, but it would return undefined, 0, and all the things I can do to the array.
+  ```
+  would return an object, not the grid[i][j]
+  I presumed it'd be true, but it would return undefined, 0, and all the things I can do to the array.
 
 
-```
+  ```
 if (data.grid[i][j] == 1)
+  ```
+
+
+## Keyboard input
 ```
+window.addEventListener("keydown", checkKeyPressed, false);
+function checkKeyPressed(e) {
+
+  if (e.keyCode == "49") {
+    console.log("1 was pressed");
+    return matrix1.matrix[0][0] = 1;
+  }
+}
+```
+- There's a lot of redundant code doing it this way.
+I'll have to do for every key and then trigger every square on the grid.
+
 
 
 
