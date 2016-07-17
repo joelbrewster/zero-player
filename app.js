@@ -46,8 +46,8 @@ synth.set({
 
 nx.onload = function() {
 
-  nx.sendsTo("ajax");
-  nx.setAjaxPath("lib/nexusOSCRelay.php");
+  // nx.sendsTo("ajax");
+  // nx.setAjaxPath("lib/nexusOSCRelay.php");
 
   nx.colorize("accent", "#D0FD5B");
   nx.colorize("border", "#000000");
