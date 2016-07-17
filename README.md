@@ -32,8 +32,23 @@ The overall goal was to make the user be able to interface with the app without 
 
 
 ## Code
-nexusUI
-tone.js
+*nexusUI*
+- The Matrix element.
+- Envelope element.
+- The function for Conway's Game of Life.
+
+*tone.js*
+- Generating the sounds.
+- Applying filters and sound effects.
+
+*mousetrap.js*
+Keyboard inputa(using keycodes sucked).
+
+*MaxMSP()*
+- Routing the osc data from the monome to local.
+
+*OSCulator*
+- Changing the data from local to qwerty keyboard keys for input.
 
 
 ## Roadblocks
