@@ -51,24 +51,24 @@ nx.onload = function() {
     // nx.setAjaxPath("lib/nexusOSCRelay.php");
 
 
-    nx.colorize("accent", "#D0FD5B");
+    nx.colorize("accent", "#0099CC");
     nx.colorize("border", "#000000");
     nx.colorize("fill", "#252525");
 
     matrix1.col = 8;
     matrix1.row = 8;
     matrix1.init();
-    setInterval(matrix1.life, 80);
+    setInterval(matrix1.life, 60);
 
     matrix1.on('*', function(data) {
-        synth.set("detune", ~~(Math.random() * 10 - 5));
+        synth.set("detune", ~~(Math.random() * 20 - 1));
 
         if (data.grid) {
             for (var i = 0; i < data.grid.length; i++) {
                 for (var j = 0; j < data.grid[i].length; j++) {
 
                     if (data.grid[i][j] == 1) {
-                        synth.triggerAttackRelease((j + 1) * (i + 1) * 33, 0.42);
+                        synth.triggerAttackRelease((j + 1) * (i + 1) * 33, 0.22);
                         //console.log(i,j);
                     }
 
@@ -76,14 +76,14 @@ nx.onload = function() {
                         // do mono stuff
                         if (data.grid[i][j] == 1) {
                             // turnOn monome
-                            console.log(i, j, 1);
+                            // console.log(i, j, 1);
                             matrix1.transmit(i, j);
                             monoGrid[i][j] = 1;
                         }
                         if (data.grid[i][j] === 0) {
                             // turnOff monome
                             monoGrid[i][j] = 0;
-                            console.log(i, j, 0);
+                            // console.log(i, j, 0);
                             monoGrid[i][j] = 0;
                         }
 
