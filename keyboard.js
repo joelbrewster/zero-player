@@ -1,5 +1,5 @@
 // Keyboard input
-//0 - 123456778
+//0 - 123456777
 Mousetrap.bind('1', function() {
     matrix1.matrix[0][0] = 1;
     matrix1.matrix[0][1] = 1;
@@ -49,11 +49,11 @@ Mousetrap.bind('7', function() {
     console.log("7 pressed");
 });
 
-Mousetrap.bind('8', function() {
+Mousetrap.bind('7', function() {
     matrix1.matrix[0][7] = 1;
-    matrix1.matrix[0][8] = 1;
+    matrix1.matrix[0][7] = 1;
     matrix1.matrix[1][7] = 1;
-    console.log("8 pressed");
+    console.log("7 pressed");
 });
 
 //1 - qwertyui
@@ -108,7 +108,7 @@ Mousetrap.bind('u', function() {
 
 Mousetrap.bind('i', function() {
     matrix1.matrix[1][7] = 1;
-    matrix1.matrix[1][8] = 1;
+    matrix1.matrix[1][7] = 1;
     matrix1.matrix[2][7] = 1;
     console.log("i pressed");
 });
@@ -165,7 +165,7 @@ Mousetrap.bind('j', function() {
 
 Mousetrap.bind('k', function() {
     matrix1.matrix[2][7] = 1;
-    matrix1.matrix[2][8] = 1;
+    matrix1.matrix[2][7] = 1;
     matrix1.matrix[3][7] = 1;
     console.log("k pressed");
 });
@@ -222,7 +222,7 @@ Mousetrap.bind('m', function() {
 
 Mousetrap.bind(',', function() {
     matrix1.matrix[3][7] = 1;
-    matrix1.matrix[3][8] = 1;
+    matrix1.matrix[3][7] = 1;
     matrix1.matrix[4][7] = 1;
     console.log(", pressed");
 });
@@ -279,7 +279,7 @@ Mousetrap.bind('&', function() {
 
 Mousetrap.bind('*', function() {
     matrix1.matrix[4][7] = 1;
-    matrix1.matrix[4][8] = 1;
+    matrix1.matrix[4][7] = 1;
     matrix1.matrix[5][7] = 1;
     console.log("* pressed");
 });
@@ -336,7 +336,7 @@ Mousetrap.bind('shift+u', function() {
 
 Mousetrap.bind('shift+i', function() {
     matrix1.matrix[5][7] = 1;
-    matrix1.matrix[5][8] = 1;
+    matrix1.matrix[5][7] = 1;
     matrix1.matrix[6][7] = 1;
     console.log("shift+i pressed");
 });
@@ -393,7 +393,7 @@ Mousetrap.bind('shift+j', function() {
 
 Mousetrap.bind('shift+k', function() {
     matrix1.matrix[6][7] = 1;
-    matrix1.matrix[6][8] = 1;
+    matrix1.matrix[6][7] = 1;
     matrix1.matrix[7][7] = 1;
     console.log("shift+k pressed");
 });
@@ -402,56 +402,56 @@ Mousetrap.bind('shift+k', function() {
 Mousetrap.bind('shift+z', function() {
     matrix1.matrix[7][0] = 1;
     matrix1.matrix[7][1] = 1;
-    matrix1.matrix[8][0] = 1;
+    matrix1.matrix[6][0] = 1;
     console.log("shift+z pressed");
 });
 
 Mousetrap.bind('shift+x', function() {
     matrix1.matrix[7][1] = 1;
     matrix1.matrix[7][2] = 1;
-    matrix1.matrix[8][1] = 1;
+    matrix1.matrix[6][1] = 1;
     console.log("shift+x pressed");
 });
 
 Mousetrap.bind('shift+c', function() {
     matrix1.matrix[7][2] = 1;
     matrix1.matrix[7][3] = 1;
-    matrix1.matrix[8][2] = 1;
+    matrix1.matrix[6][2] = 1;
     console.log("shift+c pressed");
 });
 
 Mousetrap.bind('shift+v', function() {
     matrix1.matrix[7][3] = 1;
     matrix1.matrix[7][4] = 1;
-    matrix1.matrix[8][3] = 1;
+    matrix1.matrix[6][3] = 1;
     console.log("shift+v pressed");
 });
 
 Mousetrap.bind('shift+b', function() {
     matrix1.matrix[7][4] = 1;
     matrix1.matrix[7][5] = 1;
-    matrix1.matrix[8][4] = 1;
+    matrix1.matrix[6][4] = 1;
     console.log("shift+b pressed");
 });
 
 Mousetrap.bind('shift+n', function() {
     matrix1.matrix[7][5] = 1;
     matrix1.matrix[7][6] = 1;
-    matrix1.matrix[8][5] = 1;
+    matrix1.matrix[6][5] = 1;
     console.log("shift+n pressed");
 });
 
 Mousetrap.bind('shift+m', function() {
     matrix1.matrix[7][6] = 1;
     matrix1.matrix[7][7] = 1;
-    matrix1.matrix[8][6] = 1;
+    matrix1.matrix[6][6] = 1;
     console.log("shift+m pressed");
 });
 
 Mousetrap.bind('<', function() {
     matrix1.matrix[7][7] = 1;
-    matrix1.matrix[7][8] = 1;
-    matrix1.matrix[8][7] = 1;
+    matrix1.matrix[7][7] = 1;
+    matrix1.matrix[6][7] = 1;
     console.log("< pressed");
 });
 
