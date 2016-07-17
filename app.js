@@ -1,17 +1,5 @@
 // gobal variable monoGrid
 
-
-// window.addEventListener("keydown", checkKeyPressed, false);
-
-// function checkKeyPressed(e) {
-
-//   if (e.keyCode == "49") {
-//     console.log("1 was pressed");
-//     // This isn't triggering the grid
-//     matrix1.matrix[0][0] = 1;
-//   }
-// }
-
 var monoGrid = new Array(8);
 
 // init monoGrid... maybe move to init function when have one
