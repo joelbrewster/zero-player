@@ -69,7 +69,6 @@ nx.onload = function() {
 
                     if (data.grid[i][j] == 1) {
                         synth.triggerAttackRelease((j + 1) * (i + 1) * 33, 0.22);
-                        //console.log(i,j);
                     }
 
                     if (data.grid[i][j] != monoGrid[i][j]) {
@@ -92,8 +91,6 @@ nx.onload = function() {
             }
         }
     });
-
-
 
     // matrix1.matrix[1][2] = 1;
     // matrix1.sendsTo("/grid/key");
