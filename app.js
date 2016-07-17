@@ -1,16 +1,16 @@
 // gobal variable monoGrid
 
 
-window.addEventListener("keydown", checkKeyPressed, false);
+// window.addEventListener("keydown", checkKeyPressed, false);
 
-function checkKeyPressed(e) {
+// function checkKeyPressed(e) {
 
-  if (e.keyCode == "49") {
-    console.log("1 was pressed");
-    // This isn't triggering the grid
-    matrix1.matrix[0][0] = 1;
-  }
-}
+//   if (e.keyCode == "49") {
+//     console.log("1 was pressed");
+//     // This isn't triggering the grid
+//     matrix1.matrix[0][0] = 1;
+//   }
+// }
 
 var monoGrid = new Array(8);
 
@@ -58,6 +58,9 @@ synth.set({
 
 nx.onload = function() {
 
+  nx.sendsTo("ajax");
+  nx.setAjaxPath("lib/nexusOSCRelay.php");
+
   nx.colorize("accent", "#D0FD5B");
   nx.colorize("border", "#000000");
   nx.colorize("fill", "#252525");
@@ -97,6 +100,8 @@ nx.onload = function() {
       }
     }
   });
+
+
 
   // matrix1.matrix[1][2] = 1;
   // matrix1.sendsTo("/grid/key");
