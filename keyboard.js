@@ -116,256 +116,342 @@ Mousetrap.bind('i', function() {
 //2 - asdfghkj
 Mousetrap.bind('a', function() {
     matrix1.matrix[2][0] = 1;
+    matrix1.matrix[2][1] = 1;
+    matrix1.matrix[3][0] = 1;
     console.log("a pressed");
 });
 
 Mousetrap.bind('s', function() {
     matrix1.matrix[2][1] = 1;
+    matrix1.matrix[2][2] = 1;
+    matrix1.matrix[3][1] = 1;
     console.log("s pressed");
 });
 
 Mousetrap.bind('d', function() {
     matrix1.matrix[2][2] = 1;
+    matrix1.matrix[2][3] = 1;
+    matrix1.matrix[3][2] = 1;
     console.log("d pressed");
 });
 
 Mousetrap.bind('f', function() {
     matrix1.matrix[2][3] = 1;
+    matrix1.matrix[2][4] = 1;
+    matrix1.matrix[3][3] = 1;
     console.log("f pressed");
 });
 
 Mousetrap.bind('g', function() {
     matrix1.matrix[2][4] = 1;
+    matrix1.matrix[2][5] = 1;
+    matrix1.matrix[3][4] = 1;
     console.log("g pressed");
 });
 
 Mousetrap.bind('h', function() {
     matrix1.matrix[2][5] = 1;
+    matrix1.matrix[2][6] = 1;
+    matrix1.matrix[3][5] = 1;
     console.log("h pressed");
 });
 
 Mousetrap.bind('j', function() {
     matrix1.matrix[2][6] = 1;
+    matrix1.matrix[2][7] = 1;
+    matrix1.matrix[3][6] = 1;
     console.log("j pressed");
 });
 
 Mousetrap.bind('k', function() {
     matrix1.matrix[2][7] = 1;
+    matrix1.matrix[2][8] = 1;
+    matrix1.matrix[3][7] = 1;
     console.log("k pressed");
 });
-
 
 //3 - zxcvbnm,
 Mousetrap.bind('z', function() {
     matrix1.matrix[3][0] = 1;
+    matrix1.matrix[3][1] = 1;
+    matrix1.matrix[4][0] = 1;
     console.log("z pressed");
 });
 
 Mousetrap.bind('x', function() {
     matrix1.matrix[3][1] = 1;
+    matrix1.matrix[3][2] = 1;
+    matrix1.matrix[4][1] = 1;
     console.log("x pressed");
 });
 
 Mousetrap.bind('c', function() {
     matrix1.matrix[3][2] = 1;
+    matrix1.matrix[3][3] = 1;
+    matrix1.matrix[4][2] = 1;
     console.log("c pressed");
 });
 
 Mousetrap.bind('v', function() {
     matrix1.matrix[3][3] = 1;
+    matrix1.matrix[3][4] = 1;
+    matrix1.matrix[4][3] = 1;
     console.log("v pressed");
 });
 
 Mousetrap.bind('b', function() {
     matrix1.matrix[3][4] = 1;
+    matrix1.matrix[3][5] = 1;
+    matrix1.matrix[4][4] = 1;
     console.log("b pressed");
 });
 
 Mousetrap.bind('n', function() {
     matrix1.matrix[3][5] = 1;
+    matrix1.matrix[3][6] = 1;
+    matrix1.matrix[4][5] = 1;
     console.log("n pressed");
 });
 
 Mousetrap.bind('m', function() {
     matrix1.matrix[3][6] = 1;
+    matrix1.matrix[3][7] = 1;
+    matrix1.matrix[4][6] = 1;
     console.log("m pressed");
 });
 
 Mousetrap.bind(',', function() {
     matrix1.matrix[3][7] = 1;
+    matrix1.matrix[3][8] = 1;
+    matrix1.matrix[4][7] = 1;
     console.log(", pressed");
 });
-
 
 //4 - !@#$%^&*
 Mousetrap.bind('!', function() {
     matrix1.matrix[4][0] = 1;
+    matrix1.matrix[4][1] = 1;
+    matrix1.matrix[5][0] = 1;
     console.log("! pressed");
 });
 
 Mousetrap.bind('@', function() {
     matrix1.matrix[4][1] = 1;
+    matrix1.matrix[4][2] = 1;
+    matrix1.matrix[5][1] = 1;
     console.log("@ pressed");
 });
 
 Mousetrap.bind('#', function() {
     matrix1.matrix[4][2] = 1;
+    matrix1.matrix[4][3] = 1;
+    matrix1.matrix[5][2] = 1;
     console.log("# pressed");
 });
 
 Mousetrap.bind('$', function() {
     matrix1.matrix[4][3] = 1;
+    matrix1.matrix[4][4] = 1;
+    matrix1.matrix[5][3] = 1;
     console.log("$ pressed");
 });
 
 Mousetrap.bind('%', function() {
     matrix1.matrix[4][4] = 1;
+    matrix1.matrix[4][5] = 1;
+    matrix1.matrix[5][4] = 1;
     console.log("% pressed");
 });
 
 Mousetrap.bind('^', function() {
     matrix1.matrix[4][5] = 1;
+    matrix1.matrix[4][6] = 1;
+    matrix1.matrix[5][5] = 1;
     console.log("^ pressed");
 });
 
 Mousetrap.bind('&', function() {
     matrix1.matrix[4][6] = 1;
+    matrix1.matrix[4][7] = 1;
+    matrix1.matrix[5][6] = 1;
     console.log("& pressed");
 });
 
 Mousetrap.bind('*', function() {
     matrix1.matrix[4][7] = 1;
+    matrix1.matrix[4][8] = 1;
+    matrix1.matrix[5][7] = 1;
     console.log("* pressed");
 });
 
-
 //5 - QWERTYUI
-Mousetrap.bind('Q', function() {
+Mousetrap.bind('shift+q', function() {
     matrix1.matrix[5][0] = 1;
-    console.log("Q pressed");
-});
-
-Mousetrap.bind('W', function() {
     matrix1.matrix[5][1] = 1;
-    console.log("W pressed");
+    matrix1.matrix[6][0] = 1;
+    console.log("shift+q pressed");
 });
 
-Mousetrap.bind('E', function() {
+Mousetrap.bind('shift+w', function() {
+    matrix1.matrix[5][1] = 1;
     matrix1.matrix[5][2] = 1;
-    console.log("E pressed");
+    matrix1.matrix[6][1] = 1;
+    console.log("shift+w pressed");
 });
 
-Mousetrap.bind('R', function() {
+Mousetrap.bind('shift+e', function() {
+    matrix1.matrix[5][2] = 1;
     matrix1.matrix[5][3] = 1;
-    console.log("R pressed");
+    matrix1.matrix[6][2] = 1;
+    console.log("shift+e pressed");
 });
 
-Mousetrap.bind('T', function() {
+Mousetrap.bind('shift+r', function() {
+    matrix1.matrix[5][3] = 1;
     matrix1.matrix[5][4] = 1;
-    console.log("T pressed");
+    matrix1.matrix[6][3] = 1;
+    console.log("shift+r pressed");
 });
 
-Mousetrap.bind('Y', function() {
+Mousetrap.bind('shift+t', function() {
+    matrix1.matrix[5][4] = 1;
     matrix1.matrix[5][5] = 1;
-    console.log("Y pressed");
+    matrix1.matrix[6][4] = 1;
+    console.log("shift+t pressed");
 });
 
-Mousetrap.bind('U', function() {
+Mousetrap.bind('shift+y', function() {
+    matrix1.matrix[5][5] = 1;
     matrix1.matrix[5][6] = 1;
-    console.log("U pressed");
+    matrix1.matrix[6][5] = 1;
+    console.log("shift+y pressed");
 });
 
-Mousetrap.bind('I', function() {
+Mousetrap.bind('shift+u', function() {
+    matrix1.matrix[5][6] = 1;
     matrix1.matrix[5][7] = 1;
-    console.log("I pressed");
+    matrix1.matrix[6][6] = 1;
+    console.log("shift+u pressed");
 });
 
-
-
-
+Mousetrap.bind('shift+i', function() {
+    matrix1.matrix[5][7] = 1;
+    matrix1.matrix[5][8] = 1;
+    matrix1.matrix[6][7] = 1;
+    console.log("shift+i pressed");
+});
 
 //6 - ASDFGHKJ
-Mousetrap.bind('A', function() {
+Mousetrap.bind('shift+a', function() {
     matrix1.matrix[6][0] = 1;
-    console.log("A pressed");
-});
-
-Mousetrap.bind('S', function() {
     matrix1.matrix[6][1] = 1;
-    console.log("S pressed");
+    matrix1.matrix[7][0] = 1;
+    console.log("shift+a pressed");
 });
 
-Mousetrap.bind('D', function() {
+Mousetrap.bind('shift+s', function() {
+    matrix1.matrix[6][1] = 1;
     matrix1.matrix[6][2] = 1;
-    console.log("D pressed");
+    matrix1.matrix[7][1] = 1;
+    console.log("shift+s pressed");
 });
 
-Mousetrap.bind('F', function() {
+Mousetrap.bind('shift+d', function() {
+    matrix1.matrix[6][2] = 1;
     matrix1.matrix[6][3] = 1;
-    console.log("F pressed");
+    matrix1.matrix[7][2] = 1;
+    console.log("shift+d pressed");
 });
 
-Mousetrap.bind('G', function() {
+Mousetrap.bind('shift+f', function() {
+    matrix1.matrix[6][3] = 1;
     matrix1.matrix[6][4] = 1;
-    console.log("G pressed");
+    matrix1.matrix[7][3] = 1;
+    console.log("shift+f pressed");
 });
 
-Mousetrap.bind('H', function() {
+Mousetrap.bind('shift+g', function() {
+    matrix1.matrix[6][4] = 1;
     matrix1.matrix[6][5] = 1;
-    console.log("H pressed");
+    matrix1.matrix[7][4] = 1;
+    console.log("shift+g pressed");
 });
 
-Mousetrap.bind('J', function() {
+Mousetrap.bind('shift+h', function() {
+    matrix1.matrix[6][5] = 1;
     matrix1.matrix[6][6] = 1;
-    console.log("J pressed");
+    matrix1.matrix[7][5] = 1;
+    console.log("shift+h pressed");
 });
 
-Mousetrap.bind('K', function() {
+Mousetrap.bind('shift+j', function() {
+    matrix1.matrix[6][6] = 1;
     matrix1.matrix[6][7] = 1;
-    console.log("K pressed");
+    matrix1.matrix[7][6] = 1;
+    console.log("shift+j pressed");
 });
 
-
-
+Mousetrap.bind('shift+k', function() {
+    matrix1.matrix[6][7] = 1;
+    matrix1.matrix[6][8] = 1;
+    matrix1.matrix[7][7] = 1;
+    console.log("shift+k pressed");
+});
 
 //7 - ZXCVBNM<
-Mousetrap.bind('Z', function() {
+Mousetrap.bind('shift+z', function() {
     matrix1.matrix[7][0] = 1;
-    console.log("Z pressed");
-});
-
-Mousetrap.bind('X', function() {
     matrix1.matrix[7][1] = 1;
-    console.log("X pressed");
+    matrix1.matrix[8][0] = 1;
+    console.log("shift+z pressed");
 });
 
-Mousetrap.bind('C', function() {
+Mousetrap.bind('shift+x', function() {
+    matrix1.matrix[7][1] = 1;
     matrix1.matrix[7][2] = 1;
-    console.log("C pressed");
+    matrix1.matrix[8][1] = 1;
+    console.log("shift+x pressed");
 });
 
-Mousetrap.bind('V', function() {
+Mousetrap.bind('shift+c', function() {
+    matrix1.matrix[7][2] = 1;
     matrix1.matrix[7][3] = 1;
-    console.log("V pressed");
+    matrix1.matrix[8][2] = 1;
+    console.log("shift+c pressed");
 });
 
-Mousetrap.bind('B', function() {
+Mousetrap.bind('shift+v', function() {
+    matrix1.matrix[7][3] = 1;
     matrix1.matrix[7][4] = 1;
-    console.log("B pressed");
+    matrix1.matrix[8][3] = 1;
+    console.log("shift+v pressed");
 });
 
-Mousetrap.bind('N', function() {
+Mousetrap.bind('shift+b', function() {
+    matrix1.matrix[7][4] = 1;
     matrix1.matrix[7][5] = 1;
-    console.log("N pressed");
+    matrix1.matrix[8][4] = 1;
+    console.log("shift+b pressed");
 });
 
-Mousetrap.bind('M', function() {
+Mousetrap.bind('shift+n', function() {
+    matrix1.matrix[7][5] = 1;
     matrix1.matrix[7][6] = 1;
-    console.log("M pressed");
+    matrix1.matrix[8][5] = 1;
+    console.log("shift+n pressed");
+});
+
+Mousetrap.bind('shift+m', function() {
+    matrix1.matrix[7][6] = 1;
+    matrix1.matrix[7][7] = 1;
+    matrix1.matrix[8][6] = 1;
+    console.log("shift+m pressed");
 });
 
 Mousetrap.bind('<', function() {
     matrix1.matrix[7][7] = 1;
+    matrix1.matrix[7][8] = 1;
+    matrix1.matrix[8][7] = 1;
     console.log("< pressed");
 });
 
