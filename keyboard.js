@@ -2,82 +2,114 @@
 //0 - 123456778
 Mousetrap.bind('1', function() {
     matrix1.matrix[0][0] = 1;
+    matrix1.matrix[0][1] = 1;
+    matrix1.matrix[1][0] = 1;
     console.log("1 pressed");
 });
 
 Mousetrap.bind('2', function() {
     matrix1.matrix[0][1] = 1;
+    matrix1.matrix[0][2] = 1;
+    matrix1.matrix[1][1] = 1;
     console.log("2 pressed");
 });
 
 Mousetrap.bind('3', function() {
     matrix1.matrix[0][2] = 1;
+    matrix1.matrix[0][3] = 1;
+    matrix1.matrix[1][2] = 1;
     console.log("3 pressed");
 });
 
 Mousetrap.bind('4', function() {
     matrix1.matrix[0][3] = 1;
+    matrix1.matrix[0][4] = 1;
+    matrix1.matrix[1][3] = 1;
     console.log("4 pressed");
 });
 
 Mousetrap.bind('5', function() {
     matrix1.matrix[0][4] = 1;
+    matrix1.matrix[0][5] = 1;
+    matrix1.matrix[1][4] = 1;
     console.log("5 pressed");
 });
 
 Mousetrap.bind('6', function() {
     matrix1.matrix[0][5] = 1;
+    matrix1.matrix[0][6] = 1;
+    matrix1.matrix[1][5] = 1;
     console.log("6 pressed");
 });
 
 Mousetrap.bind('7', function() {
     matrix1.matrix[0][6] = 1;
+    matrix1.matrix[0][7] = 1;
+    matrix1.matrix[1][6] = 1;
     console.log("7 pressed");
 });
 
 Mousetrap.bind('8', function() {
     matrix1.matrix[0][7] = 1;
+    matrix1.matrix[0][8] = 1;
+    matrix1.matrix[1][7] = 1;
     console.log("8 pressed");
 });
 
 //1 - qwertyui
 Mousetrap.bind('q', function() {
     matrix1.matrix[1][0] = 1;
+    matrix1.matrix[1][1] = 1;
+    matrix1.matrix[2][0] = 1;
     console.log("q pressed");
 });
 
 Mousetrap.bind('w', function() {
     matrix1.matrix[1][1] = 1;
+    matrix1.matrix[1][2] = 1;
+    matrix1.matrix[2][1] = 1;
     console.log("w pressed");
 });
 
 Mousetrap.bind('e', function() {
     matrix1.matrix[1][2] = 1;
+    matrix1.matrix[1][3] = 1;
+    matrix1.matrix[2][2] = 1;
     console.log("e pressed");
 });
 
 Mousetrap.bind('r', function() {
     matrix1.matrix[1][3] = 1;
+    matrix1.matrix[1][4] = 1;
+    matrix1.matrix[2][3] = 1;
     console.log("r pressed");
 });
 
 Mousetrap.bind('t', function() {
     matrix1.matrix[1][4] = 1;
+    matrix1.matrix[1][5] = 1;
+    matrix1.matrix[2][4] = 1;
     console.log("t pressed");
 });
 
 Mousetrap.bind('y', function() {
     matrix1.matrix[1][5] = 1;
+    matrix1.matrix[1][6] = 1;
+    matrix1.matrix[2][5] = 1;
     console.log("y pressed");
 });
 
 Mousetrap.bind('u', function() {
     matrix1.matrix[1][6] = 1;
+    matrix1.matrix[1][7] = 1;
+    matrix1.matrix[2][6] = 1;
     console.log("u pressed");
 });
 
 Mousetrap.bind('i', function() {
     matrix1.matrix[1][7] = 1;
+    matrix1.matrix[1][8] = 1;
+    matrix1.matrix[2][7] = 1;
     console.log("i pressed");
 });
 
