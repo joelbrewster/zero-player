@@ -1,4 +1,17 @@
+initial setup
+php server
+localhost
+
+
 # zero-player
+
+## colors
+- #61DAFB
+- #2D2D2D
+- #222222
+- #CC7A6F
+- #F9F9F9
+
 
 ## Introduction
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
@@ -32,53 +45,26 @@ The overall goal was to make the user be able to interface with the app without 
 
 
 ## Code
-*nexusUI*
+**nexusUI**
 - The Matrix element.
 - Envelope element.
 - The function for Conway's Game of Life.
 
-*tone.js*
-- Generating the sounds.
-- Applying filters and sound effects.
+**tone.js**
+- Generating the audio.
+- Generating the oscillator types.
+- Applying filters and sound effects(ping pong delay).
+- Applying the envelope (ADSR).
 
-*mousetrap.js*
-Keyboard inputa(using keycodes sucked).
+**mousetrap.js**
+Keyboard inputa(using keycodes was so tedious and sometimes didn't work with certain chrome extensions).
+- all input is in keyboard.js
 
-*MaxMSP()*
-- Routing the osc data from the monome to local.
+**MaxMSP()**
+- Routing the osc data from the monome to localhost(8000).
 
-*OSCulator*
-- Changing the data from local to qwerty keyboard keys for input.
-
-
-## Roadblocks
-  ```
-if (data.grid[i][j])
-
-  ```
-  would return an object, not the grid[i][j]
-  I presumed it'd be true, but it would return undefined, 0, and all the things I can do to the array.
-
-
-  ```
-if (data.grid[i][j] == 1)
-  ```
-
-
-## Keyboard input
-```
-window.addEventListener("keydown", checkKeyPressed, false);
-
-function checkKeyPressed(e) {
-
-  if (e.keyCode == "49") {
-    console.log("1 was pressed");
-    matrix1.matrix[0][0] = 1;
-  }
-}
-```
-- There's a lot of redundant code doing it this way.
-I'll have to do for every key and then trigger every square on the grid.
+**OSCulator**
+- Changing the data from localhost to qwerty keyboard keys for input.
 
 
 
@@ -156,5 +142,44 @@ I really hoped to make this app something portable that can be used my many peop
         │ │ Z │ │ X │ │ C │ │ V │ │ B │ │ N │ │ M │ │ < │ │
         │ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ │
         └─────────────────────────────────────────────────┘
+```
+
+
+## Roadblocks
+  ```
+if (data.grid[i][j])
+
+  ```
+  would return an object, not the grid[i][j]
+  I presumed it'd be true, but it would return undefined, 0, and all the things I can do to the array.
+
+
+  ```
+if (data.grid[i][j] == 1)
+  ```
+
+
+## Keyboard input
+- Initially I had this:
+```
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(e) {
+
+  if (e.keyCode == "49") {
+    console.log("1 was pressed");
+    matrix1.matrix[0][0] = 1;
+    etc
+  }
+}
+```
+
+- I ended up going with mousetrap so speed along typing keys instead of using charcodes.
+```
+Mousetrap.bind('1', function() {
+    matrix1.matrix[0][0] = 1;
+    console.log("1 pressed");
+    etc
+});
 ```
 
