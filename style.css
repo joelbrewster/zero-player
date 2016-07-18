@@ -1,12 +1,93 @@
 body {
-  background-color:#0e0e0e;
+  /* background: red; /1* For browsers that do not support gradients *1/ */
+  /* background: -webkit-radial-gradient(circle, red, yellow, green); /1* Safari *1/ */
+  /* background: -o-radial-gradient(circle, red, yellow, green); /1* Opera 11.6 to 12.0 *1/ */
+  /* background: -moz-radial-gradient(circle, red, yellow, green); /1* Firefox 3.6 to 15 *1/ */
+  background-color: #222222;
+  background: radial-gradient(circle, #111111, #222222); /* Standard syntax */
 }
-.nx {
-  display:block;
-  align: center;
+.top {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+
 }
 .page {
-  position: relative;
-  top: 30%;
-  transform: translateY(-30%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+}
+
+.middle {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+.left {
+  opacity: 0.2;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+
+  padding-right: 10%;
+}
+
+.right {
+  opacity: 0.2;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  box-ordinal-group: 1;
+
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+
+  padding-left: 10%;
+}
+.nx {
 }
