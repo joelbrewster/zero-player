@@ -5464,7 +5464,9 @@ var multitouch = module.exports = function (target) {
 		this.init();
 	```
 	*/
-	this.matrixLabels = false;
+	// this.matrixLabels = false;
+	this.matrixLabels = true;
+  matrix1.matrixLabels = ["1","2","3","4","5","6","7","8","q","w","e","r","t","y","u","i","a","s","d","f","g","h","j","k","z","x","c","v","b","n","m",",","!","@","#","","$","","%","","^","","&","","*","Q","W","E","R","T","Y","U","I","A","S","D","F","G","H","J","K","Z","X","C","V","B","N","M","<"];
 
 	this.init();
 }
