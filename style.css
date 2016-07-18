@@ -1,9 +1,8 @@
 body {
-  /* background: red; /1* For browsers that do not support gradients *1/ */
-  /* background: -webkit-radial-gradient(circle, red, yellow, green); /1* Safari *1/ */
-  /* background: -o-radial-gradient(circle, red, yellow, green); /1* Opera 11.6 to 12.0 *1/ */
-  /* background: -moz-radial-gradient(circle, red, yellow, green); /1* Firefox 3.6 to 15 *1/ */
   background-color: #222222;
+  background: -webkit-radial-gradient(circle, #111111, #222222); /* Safari */
+  background: -o-radial-gradient(circle, #111111, #222222); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #111111, #222222); /* Firefox 3.6 to 15 */
   background: radial-gradient(circle, #111111, #222222); /* Standard syntax */
 }
 
