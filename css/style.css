@@ -9,7 +9,7 @@ body {
 /* Max the page too 10% */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 .nx {
@@ -18,7 +18,7 @@ body {
 }
 
 .middle {
-  padding-top: 3%;
+  padding-top: 5%;
   padding-bottom: 7%;
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
@@ -43,6 +43,7 @@ body {
 }
 
 .right {
+
   opacity: 0.2;
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
@@ -54,3 +55,10 @@ body {
 
   padding-left: 10%;
 }
+
+.help {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
