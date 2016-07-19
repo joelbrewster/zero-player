@@ -3,7 +3,7 @@
 Mousetrap.bind('1', function() {
   matrix1.matrix[0][0] = 1;
   matrix1.setCell(0,0,true);
-  matrix1.val = "1 pressed";
+  synth.triggerAttackRelease((j + 0) * (i + 0) * 33, 0.22);
   // matrix1.matrix[0][1] = 1;
   // matrix1.matrix[1][0] = 1;
   // matrix1.matrix[0][1] = 1;
@@ -13,6 +13,7 @@ Mousetrap.bind('1', function() {
 Mousetrap.bind('2', function() {
   matrix1.matrix[1][0] = 1;
   matrix1.setCell(1,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[1][1] = 1;
   // matrix1.matrix[2][0] = 1;
   // matrix1.matrix[1][1] = 1;
@@ -22,6 +23,7 @@ Mousetrap.bind('2', function() {
 Mousetrap.bind('3', function() {
   matrix1.matrix[2][0] = 1;
   matrix1.setCell(2,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 2) * 33, 0.22);
   // matrix1.matrix[2][1] = 1;
   // matrix1.matrix[3][0] = 1;
   // matrix1.matrix[2][1] = 1;
@@ -31,6 +33,7 @@ Mousetrap.bind('3', function() {
 Mousetrap.bind('4', function() {
   matrix1.matrix[3][0] = 1;
   matrix1.setCell(3,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 3) * 33, 0.22);
   // matrix1.matrix[3][1] = 1;
   // matrix1.matrix[4][0] = 1;
   // matrix1.matrix[3][1] = 1;
@@ -40,6 +43,7 @@ Mousetrap.bind('4', function() {
 Mousetrap.bind('5', function() {
   matrix1.matrix[4][0] = 1;
   matrix1.setCell(4,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 4) * 33, 0.22);
   // matrix1.matrix[4][1] = 1;
   // matrix1.matrix[5][0] = 1;
   // matrix1.matrix[4][1] = 1;
@@ -49,6 +53,7 @@ Mousetrap.bind('5', function() {
 Mousetrap.bind('6', function() {
   matrix1.matrix[5][0] = 1;
   matrix1.setCell(5,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 5) * 33, 0.22);
   // matrix1.matrix[5][1] = 1;
   // matrix1.matrix[6][0] = 1;
   // matrix1.matrix[5][1] = 1;
@@ -58,6 +63,7 @@ Mousetrap.bind('6', function() {
 Mousetrap.bind('7', function() {
   matrix1.matrix[6][0] = 1;
   matrix1.setCell(6,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 6) * 33, 0.22);
   // matrix1.matrix[6][1] = 1;
   // matrix1.matrix[7][0] = 1;
   // matrix1.matrix[6][1] = 1;
@@ -67,6 +73,7 @@ Mousetrap.bind('7', function() {
 Mousetrap.bind('8', function() {
   matrix1.matrix[7][0] = 1;
   matrix1.setCell(7,0, true);
+  synth.triggerAttackRelease((j + 0) * (i + 7) * 33, 0.22);
   // matrix1.matrix[7][1] = 1;
   // matrix1.matrix[6][0] = 1;
   // matrix1.matrix[7][1] = 1;
@@ -77,6 +84,7 @@ Mousetrap.bind('8', function() {
 Mousetrap.bind('q', function() {
   matrix1.matrix[0][1] = 1;
   matrix1.setCell(0,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 8) * 33, 0.22);
   // matrix1.matrix[0][2] = 1;
   // matrix1.matrix[1][1] = 1;
   // matrix1.matrix[0][2] = 1;
@@ -86,6 +94,7 @@ Mousetrap.bind('q', function() {
 Mousetrap.bind('w', function() {
   matrix1.matrix[1][1] = 1;
   matrix1.setCell(1,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 9) * 33, 0.22);
   // matrix1.matrix[2][1] = 1;
   // matrix1.matrix[2][1] = 1;
   // matrix1.matrix[1][2] = 1;
@@ -95,6 +104,7 @@ Mousetrap.bind('w', function() {
 Mousetrap.bind('e', function() {
   matrix1.matrix[2][1] = 1;
   matrix1.setCell(2,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 10) * 33, 0.22);
   // matrix1.matrix[2][2] = 1;
   // matrix1.matrix[3][1] = 1;
   // matrix1.matrix[2][2] = 1;
@@ -104,6 +114,7 @@ Mousetrap.bind('e', function() {
 Mousetrap.bind('r', function() {
   matrix1.matrix[3][1] = 1;
   matrix1.setCell(3,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 11) * 33, 0.22);
   // matrix1.matrix[3][2] = 1;
   // matrix1.matrix[4][1] = 1;
   // matrix1.matrix[3][2] = 1;
@@ -113,6 +124,7 @@ Mousetrap.bind('r', function() {
 Mousetrap.bind('t', function() {
   matrix1.matrix[4][1] = 1;
   matrix1.setCell(4,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 12) * 33, 0.22);
   // matrix1.matrix[4][2] = 1;
   // matrix1.matrix[5][1] = 1;
   // matrix1.matrix[4][2] = 1;
@@ -122,6 +134,7 @@ Mousetrap.bind('t', function() {
 Mousetrap.bind('y', function() {
   matrix1.matrix[5][1] = 1;
   matrix1.setCell(5,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 13) * 33, 0.22);
   // matrix1.matrix[5][2] = 1;
   // matrix1.matrix[6][1] = 1;
   // matrix1.matrix[5][2] = 1;
@@ -131,6 +144,7 @@ Mousetrap.bind('y', function() {
 Mousetrap.bind('u', function() {
   matrix1.matrix[6][1] = 1;
   matrix1.setCell(6,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 14) * 33, 0.22);
   // matrix1.matrix[6][2] = 1;
   // matrix1.matrix[7][1] = 1;
   // matrix1.matrix[6][2] = 1;
@@ -140,6 +154,7 @@ Mousetrap.bind('u', function() {
 Mousetrap.bind('i', function() {
   matrix1.matrix[7][1] = 1;
   matrix1.setCell(7,1, true);
+  synth.triggerAttackRelease((j + 0) * (i + 15) * 33, 0.22);
   // matrix1.matrix[7][2] = 1;
   // matrix1.matrix[7][1] = 1;
   // matrix1.matrix[7][2] = 1;
@@ -150,6 +165,7 @@ Mousetrap.bind('i', function() {
 Mousetrap.bind('a', function() {
   matrix1.matrix[0][2] = 1;
   matrix1.setCell(0,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 16) * 33, 0.22);
   // matrix1.matrix[0][3] = 1;
   // matrix1.matrix[1][2] = 1;
   // matrix1.matrix[0][3] = 1;
@@ -159,6 +175,7 @@ Mousetrap.bind('a', function() {
 Mousetrap.bind('s', function() {
   matrix1.matrix[1][2] = 1;
   matrix1.setCell(1,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 17) * 33, 0.22);
   // matrix1.matrix[1][3] = 1;
   // matrix1.matrix[2][2] = 1;
   // matrix1.matrix[1][3] = 1;
@@ -168,6 +185,7 @@ Mousetrap.bind('s', function() {
 Mousetrap.bind('d', function() {
   matrix1.matrix[2][2] = 1;
   matrix1.setCell(2,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 18) * 33, 0.22);
   // matrix1.matrix[2][3] = 1;
   // matrix1.matrix[3][2] = 1;
   // matrix1.matrix[2][3] = 1;
@@ -177,6 +195,7 @@ Mousetrap.bind('d', function() {
 Mousetrap.bind('f', function() {
   matrix1.matrix[3][2] = 1;
   matrix1.setCell(3,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 19) * 33, 0.22);
   // matrix1.matrix[3][3] = 1;
   // matrix1.matrix[4][2] = 1;
   // matrix1.matrix[3][3] = 1;
@@ -186,6 +205,7 @@ Mousetrap.bind('f', function() {
 Mousetrap.bind('g', function() {
   matrix1.matrix[4][2] = 1;
   matrix1.setCell(4,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 20) * 33, 0.22);
   // matrix1.matrix[4][3] = 1;
   // matrix1.matrix[5][2] = 1;
   // matrix1.matrix[4][3] = 1;
@@ -195,6 +215,7 @@ Mousetrap.bind('g', function() {
 Mousetrap.bind('h', function() {
   matrix1.matrix[5][2] = 1;
   matrix1.setCell(5,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 21) * 33, 0.22);
   // matrix1.matrix[5][3] = 1;
   // matrix1.matrix[6][2] = 1;
   // matrix1.matrix[5][3] = 1;
@@ -204,6 +225,7 @@ Mousetrap.bind('h', function() {
 Mousetrap.bind('j', function() {
   matrix1.matrix[6][2] = 1;
   matrix1.setCell(6,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 22) * 33, 0.22);
   // matrix1.matrix[6][3] = 1;
   // matrix1.matrix[7][2] = 1;
   // matrix1.matrix[6][3] = 1;
@@ -213,6 +235,7 @@ Mousetrap.bind('j', function() {
 Mousetrap.bind('k', function() {
   matrix1.matrix[7][2] = 1;
   matrix1.setCell(7,2, true);
+  synth.triggerAttackRelease((j + 0) * (i + 23) * 33, 0.22);
   // matrix1.matrix[7][3] = 1;
   // matrix1.matrix[7][2] = 1;
   // matrix1.matrix[7][3] = 1;
@@ -223,6 +246,7 @@ Mousetrap.bind('k', function() {
 Mousetrap.bind('z', function() {
   matrix1.matrix[0][3] = 1;
   matrix1.setCell(0,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 24) * 33, 0.22);
   // matrix1.matrix[0][4] = 1;
   // matrix1.matrix[1][3] = 1;
   // matrix1.matrix[0][4] = 1;
@@ -232,6 +256,7 @@ Mousetrap.bind('z', function() {
 Mousetrap.bind('x', function() {
   matrix1.matrix[1][3] = 1;
   matrix1.setCell(1,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 25) * 33, 0.22);
   // matrix1.matrix[1][4] = 1;
   // matrix1.matrix[2][3] = 1;
   // matrix1.matrix[1][4] = 1;
@@ -241,6 +266,7 @@ Mousetrap.bind('x', function() {
 Mousetrap.bind('c', function() {
   matrix1.matrix[2][3] = 1;
   matrix1.setCell(2,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 26) * 33, 0.22);
   // matrix1.matrix[2][4] = 1;
   // matrix1.matrix[3][3] = 1;
   // matrix1.matrix[2][4] = 1;
@@ -250,6 +276,7 @@ Mousetrap.bind('c', function() {
 Mousetrap.bind('v', function() {
   matrix1.matrix[3][3] = 1;
   matrix1.setCell(3,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 27) * 33, 0.22);
   // matrix1.matrix[3][4] = 1;
   // matrix1.matrix[4][3] = 1;
   // matrix1.matrix[3][4] = 1;
@@ -259,6 +286,7 @@ Mousetrap.bind('v', function() {
 Mousetrap.bind('b', function() {
   matrix1.matrix[4][3] = 1;
   matrix1.setCell(4,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 28) * 33, 0.22);
   // matrix1.matrix[4][4] = 1;
   // matrix1.matrix[5][3] = 1;
   // matrix1.matrix[4][4] = 1;
@@ -268,6 +296,7 @@ Mousetrap.bind('b', function() {
 Mousetrap.bind('n', function() {
   matrix1.matrix[5][3] = 1;
   matrix1.setCell(5,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 29) * 33, 0.22);
   // matrix1.matrix[5][4] = 1;
   // matrix1.matrix[6][3] = 1;
   // matrix1.matrix[5][4] = 1;
@@ -277,6 +306,7 @@ Mousetrap.bind('n', function() {
 Mousetrap.bind('m', function() {
   matrix1.matrix[6][3] = 1;
   matrix1.setCell(6,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 30) * 33, 0.22);
   // matrix1.matrix[6][4] = 1;
   // matrix1.matrix[7][3] = 1;
   // matrix1.matrix[6][4] = 1;
@@ -286,6 +316,7 @@ Mousetrap.bind('m', function() {
 Mousetrap.bind(',', function() {
   matrix1.matrix[7][3] = 1;
   matrix1.setCell(7,3, true);
+  synth.triggerAttackRelease((j + 0) * (i + 31) * 33, 0.22);
   // matrix1.matrix[7][4] = 1;
   // matrix1.matrix[7][3] = 1;
   // matrix1.matrix[7][4] = 1;
@@ -296,6 +327,7 @@ Mousetrap.bind(',', function() {
 Mousetrap.bind('!', function() {
   matrix1.matrix[0][4] = 1;
   matrix1.setCell(0,4, true);
+  synth.triggerAttackRelease((j + 1) * (i + 1) * 33, 0.22);
   // matrix1.matrix[0][5] = 1;
   // matrix1.matrix[1][4] = 1;
   // matrix1.matrix[0][5] = 1;
@@ -305,6 +337,7 @@ Mousetrap.bind('!', function() {
 Mousetrap.bind('@', function() {
   matrix1.matrix[1][4] = 1;
   matrix1.setCell(1,4, true);
+  synth.triggerAttackRelease((j + 1) * (i + 2) * 33, 0.22);
   // matrix1.matrix[1][5] = 1;
   // matrix1.matrix[2][4] = 1;
   // matrix1.matrix[1][5] = 1;
@@ -314,6 +347,7 @@ Mousetrap.bind('@', function() {
 Mousetrap.bind('#', function() {
   matrix1.matrix[2][4] = 1;
   matrix1.setCell(2,4, true);
+  synth.triggerAttackRelease((j + 1) * (i + 3) * 34, 0.22);
   // matrix1.matrix[2][5] = 1;
   // matrix1.matrix[3][4] = 1;
   // matrix1.matrix[2][5] = 1;
@@ -323,6 +357,7 @@ Mousetrap.bind('#', function() {
 Mousetrap.bind('$', function() {
   matrix1.matrix[3][4] = 1;
   matrix1.setCell(3,4, true);
+  synth.triggerAttackRelease((j + 1) * (i + 4) * 33, 0.22);
   // matrix1.matrix[3][5] = 1;
   // matrix1.matrix[4][4] = 1;
   // matrix1.matrix[3][5] = 1;
@@ -332,6 +367,7 @@ Mousetrap.bind('$', function() {
 Mousetrap.bind('%', function() {
   matrix1.matrix[4][4] = 1;
   matrix1.setCell(4,4, true);
+  synth.triggerAttackRelease((j + 1) * (i + 5) * 33, 0.22);
   // matrix1.matrix[4][5] = 1;
   // matrix1.matrix[5][4] = 1;
   // matrix1.matrix[4][5] = 1;
@@ -341,6 +377,7 @@ Mousetrap.bind('%', function() {
 Mousetrap.bind('^', function() {
   matrix1.matrix[5][4] = 1;
   matrix1.setCell(5,4, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[5][5] = 1;
   // matrix1.matrix[6][4] = 1;
   // matrix1.matrix[5][5] = 1;
@@ -350,6 +387,7 @@ Mousetrap.bind('^', function() {
 Mousetrap.bind('&', function() {
   matrix1.matrix[6][4] = 1;
   matrix1.setCell(6,4, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[6][5] = 1;
   // matrix1.matrix[7][4] = 1;
   // matrix1.matrix[6][5] = 1;
@@ -359,6 +397,7 @@ Mousetrap.bind('&', function() {
 Mousetrap.bind('*', function() {
   matrix1.matrix[7][4] = 1;
   matrix1.setCell(7,4, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[7][5] = 1;
   // matrix1.matrix[7][4] = 1;
   // matrix1.matrix[7][5] = 1;
@@ -369,6 +408,7 @@ Mousetrap.bind('*', function() {
 Mousetrap.bind('shift+q', function() {
   matrix1.matrix[0][5] = 1;
   matrix1.setCell(0,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[0][6] = 1;
   // matrix1.matrix[1][5] = 1;
   // matrix1.matrix[0][6] = 1;
@@ -378,6 +418,7 @@ Mousetrap.bind('shift+q', function() {
 Mousetrap.bind('shift+w', function() {
   matrix1.matrix[1][5] = 1;
   matrix1.setCell(1,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[1][6] = 1;
   // matrix1.matrix[2][5] = 1;
   // matrix1.matrix[1][6] = 1;
@@ -387,6 +428,7 @@ Mousetrap.bind('shift+w', function() {
 Mousetrap.bind('shift+e', function() {
   matrix1.matrix[2][5] = 1;
   matrix1.setCell(2,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[2][6] = 1;
   // matrix1.matrix[3][5] = 1;
   // matrix1.matrix[2][6] = 1;
@@ -396,6 +438,7 @@ Mousetrap.bind('shift+e', function() {
 Mousetrap.bind('shift+r', function() {
   matrix1.matrix[3][5] = 1;
   matrix1.setCell(3,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[3][6] = 1;
   // matrix1.matrix[4][5] = 1;
   // matrix1.matrix[3][6] = 1;
@@ -405,6 +448,7 @@ Mousetrap.bind('shift+r', function() {
 Mousetrap.bind('shift+t', function() {
   matrix1.matrix[4][5] = 1;
   matrix1.setCell(4,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[4][6] = 1;
   // matrix1.matrix[5][5] = 1;
   // matrix1.matrix[4][6] = 1;
@@ -414,6 +458,7 @@ Mousetrap.bind('shift+t', function() {
 Mousetrap.bind('shift+y', function() {
   matrix1.matrix[5][5] = 1;
   matrix1.setCell(5,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[5][6] = 1;
   // matrix1.matrix[6][5] = 1;
   // matrix1.matrix[5][6] = 1;
@@ -423,6 +468,7 @@ Mousetrap.bind('shift+y', function() {
 Mousetrap.bind('shift+u', function() {
   matrix1.matrix[6][5] = 1;
   matrix1.setCell(6,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[6][6] = 1;
   // matrix1.matrix[7][5] = 1;
   // matrix1.matrix[6][6] = 1;
@@ -432,6 +478,7 @@ Mousetrap.bind('shift+u', function() {
 Mousetrap.bind('shift+i', function() {
   matrix1.matrix[7][5] = 1;
   matrix1.setCell(7,5, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[7][6] = 1;
   // matrix1.matrix[7][5] = 1;
   // matrix1.matrix[7][6] = 1;
@@ -442,6 +489,7 @@ Mousetrap.bind('shift+i', function() {
 Mousetrap.bind('shift+a', function() {
   matrix1.matrix[0][6] = 1;
   matrix1.setCell(0,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[0][7] = 1;
   // matrix1.matrix[1][6] = 1;
   // matrix1.matrix[0][7] = 1;
@@ -451,6 +499,7 @@ Mousetrap.bind('shift+a', function() {
 Mousetrap.bind('shift+s', function() {
   matrix1.matrix[1][6] = 1;
   matrix1.setCell(1,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[1][7] = 1;
   // matrix1.matrix[2][6] = 1;
   // matrix1.matrix[1][7] = 1;
@@ -460,6 +509,7 @@ Mousetrap.bind('shift+s', function() {
 Mousetrap.bind('shift+d', function() {
   matrix1.matrix[2][6] = 1;
   matrix1.setCell(2,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[2][7] = 1;
   // matrix1.matrix[3][6] = 1;
   // matrix1.matrix[2][7] = 1;
@@ -469,6 +519,7 @@ Mousetrap.bind('shift+d', function() {
 Mousetrap.bind('shift+f', function() {
   matrix1.matrix[3][6] = 1;
   matrix1.setCell(3,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[3][7] = 1;
   // matrix1.matrix[4][6] = 1;
   // matrix1.matrix[3][7] = 1;
@@ -478,6 +529,7 @@ Mousetrap.bind('shift+f', function() {
 Mousetrap.bind('shift+g', function() {
   matrix1.matrix[4][6] = 1;
   matrix1.setCell(4,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[4][7] = 1;
   // matrix1.matrix[5][6] = 1;
   // matrix1.matrix[4][7] = 1;
@@ -487,6 +539,7 @@ Mousetrap.bind('shift+g', function() {
 Mousetrap.bind('shift+h', function() {
   matrix1.matrix[5][6] = 1;
   matrix1.setCell(5,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[5][7] = 1;
   // matrix1.matrix[6][6] = 1;
   // matrix1.matrix[5][7] = 1;
@@ -496,6 +549,7 @@ Mousetrap.bind('shift+h', function() {
 Mousetrap.bind('shift+j', function() {
   matrix1.matrix[6][6] = 1;
   matrix1.setCell(6,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[6][7] = 1;
   // matrix1.matrix[7][6] = 1;
   // matrix1.matrix[6][7] = 1;
@@ -505,6 +559,7 @@ Mousetrap.bind('shift+j', function() {
 Mousetrap.bind('shift+k', function() {
   matrix1.matrix[7][6] = 1;
   matrix1.setCell(7,6, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[7][7] = 1;
   // matrix1.matrix[7][6] = 1;
   // matrix1.matrix[7][7] = 1;
@@ -515,6 +570,7 @@ Mousetrap.bind('shift+k', function() {
 Mousetrap.bind('shift+z', function() {
   matrix1.matrix[0][7] = 1;
   matrix1.setCell(0,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[1][7] = 1;
   // matrix1.matrix[1][7] = 1;
   // matrix1.matrix[0][6] = 1;
@@ -524,6 +580,7 @@ Mousetrap.bind('shift+z', function() {
 Mousetrap.bind('shift+x', function() {
   matrix1.matrix[1][7] = 1;
   matrix1.setCell(1,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[2][7] = 1;
   // matrix1.matrix[2][7] = 1;
   // matrix1.matrix[1][6] = 1;
@@ -533,6 +590,7 @@ Mousetrap.bind('shift+x', function() {
 Mousetrap.bind('shift+c', function() {
   matrix1.matrix[2][7] = 1;
   matrix1.setCell(2,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[3][7] = 1;
   // matrix1.matrix[3][7] = 1;
   // matrix1.matrix[2][6] = 1;
@@ -542,6 +600,7 @@ Mousetrap.bind('shift+c', function() {
 Mousetrap.bind('shift+v', function() {
   matrix1.matrix[3][7] = 1;
   matrix1.setCell(3,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[4][7] = 1;
   // matrix1.matrix[4][7] = 1;
   // matrix1.matrix[3][6] = 1;
@@ -551,6 +610,7 @@ Mousetrap.bind('shift+v', function() {
 Mousetrap.bind('shift+b', function() {
   matrix1.matrix[4][7] = 1;
   matrix1.setCell(4,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[5][7] = 1;
   // matrix1.matrix[5][7] = 1;
   // matrix1.matrix[4][6] = 1;
@@ -560,6 +620,7 @@ Mousetrap.bind('shift+b', function() {
 Mousetrap.bind('shift+n', function() {
   matrix1.matrix[5][7] = 1;
   matrix1.setCell(5,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[6][7] = 1;
   // matrix1.matrix[6][7] = 1;
   // matrix1.matrix[5][6] = 1;
@@ -569,6 +630,7 @@ Mousetrap.bind('shift+n', function() {
 Mousetrap.bind('shift+m', function() {
   matrix1.matrix[6][7] = 1;
   matrix1.setCell(6,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[7][7] = 1;
   // matrix1.matrix[7][7] = 1;
   // matrix1.matrix[6][6] = 1;
@@ -578,6 +640,7 @@ Mousetrap.bind('shift+m', function() {
 Mousetrap.bind('<', function() {
   matrix1.matrix[7][7] = 1;
   matrix1.setCell(7,7, true);
+  synth.triggerAttackRelease((j + 0) * (i + 1) * 33, 0.22);
   // matrix1.matrix[6][7] = 1;
   // matrix1.matrix[7][6] = 1;
   // console.log("< pressed");
