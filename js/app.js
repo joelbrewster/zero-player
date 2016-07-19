@@ -46,6 +46,7 @@ synth.set({
 });
 
 nx.onload = function() {
+  help();
 
   // nx.sendsTo("ajax");
   // nx.setAjaxPath("lib/nexusOSCRelay.php");
@@ -55,7 +56,7 @@ nx.onload = function() {
   // Change matrix to be lighter?
   // nx.colorize.matrix1("fill", "#989898");
   nx.colorize("border", "#ffffff");
-  matrix1.cellBuffer = 6;
+  matrix1.cellBuffer = 8;
 
   matrix1.col = 8;
   matrix1.row = 8;
@@ -72,7 +73,6 @@ nx.onload = function() {
 	// this.matrixLabels = true;
   // this.matrixLabels = ["1","2","3","4","5","6","7","8","q","w","e","r","t","y","u","i","a","s","d","f","g","h","j","k","z","x","c","v","b","n","m",",","!","@","#","","$","","%","","^","","&","","*","Q","W","E","R","T","Y","U","I","A","S","D","F","G","H","J","K","Z","X","C","V","B","N","M","<"];
   // this.init();
-
 
   matrix1.on('*', function(data) {
     synth.set("detune", ~~(Math.random() * 20 - 1));
