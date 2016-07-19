@@ -10,7 +10,6 @@ for (var i = 0, n = 8; i < n; i++) {
   }
 }
 
-
 var ping = new Tone.PingPongDelay(0.16, 0.7).toMaster();
 
 var filter = new Tone.Filter(10, "lowpass").connect(ping);
@@ -48,6 +47,7 @@ synth.set({
 nx.onload = function() {
   help();
 
+  // For sending back lights to the monome
   // nx.sendsTo("ajax");
   // nx.setAjaxPath("lib/nexusOSCRelay.php");
   nx.colorize("#2d2d2d");
@@ -62,10 +62,6 @@ nx.onload = function() {
   matrix1.row = 8;
 
   // Try to get the qwerty keys on the grid. Not sure if it'll look good
-  // nx.mode = "matrix";
-	// nx.matrixLabels = true;
-  // nx.matrixLabels = ["1","2","3","4","5","6","7","8","q","w","e","r","t","y","u","i","a","s","d","f","g","h","j","k","z","x","c","v","b","n","m",",","!","@","#","","$","","%","","^","","&","","*","Q","W","E","R","T","Y","U","I","A","S","D","F","G","H","J","K","Z","X","C","V","B","N","M","<"];
-
   matrix1.init();
   setInterval(matrix1.life, 80);
 
