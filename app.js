@@ -52,6 +52,8 @@ nx.onload = function() {
   nx.colorize("#2d2d2d");
   nx.colorize("accent", "#0099CC");
   nx.colorize("fill", "#2D2D2D");
+  // Change matrix to be lighter?
+  // nx.colorize.matrix1("fill", "#989898");
   nx.colorize("border", "#ffffff");
   matrix1.cellBuffer = 6;
 
