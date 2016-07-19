@@ -60,6 +60,9 @@ The overall goal was to make the user be able to interface with the app without 
 Keyboard inputa(using keycodes was so tedious and sometimes didn't work with certain chrome extensions).
 - all input is in keyboard.js
 
+**Vex.js**
+- for a pretty modal help popup thing.
+
 **MaxMSP()**
 - Routing the osc data from the monome to localhost(8000).
 
