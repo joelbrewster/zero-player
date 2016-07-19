@@ -1,11 +1,6 @@
-initial setup
-php server
-localhost
-
-
 # zero-player
 
-## colors
+## Color ideas
 - #61DAFB
 - #2D2D2D
 - #222222
@@ -45,29 +40,35 @@ The overall goal was to make the user be able to interface with the app without 
 
 
 ## Code
-**nexusUI**
+**[nexusUI](http://www.nexusosc.com/#Getting-Started_doc)**
 - The Matrix element.
 - Envelope element.
 - The function for Conway's Game of Life.
 
-**tone.js**
+**[tone.js](https://tonejs.github.io/docs/)**
 - Generating the audio.
 - Generating the oscillator types.
 - Applying filters and sound effects(ping pong delay).
 - Applying the envelope (ADSR).
 
-**mousetrap.js**
+**[mousetrap.js](https://github.com/ccampbell/mousetrap)**
 Keyboard inputa(using keycodes was so tedious and sometimes didn't work with certain chrome extensions).
 - all input is in keyboard.js
 
-**Vex.js**
+**[Vex.js](http://github.hubspot.com/vex/api/advanced/)**
 - for a pretty modal help popup thing.
 
-**MaxMSP()**
+**[MaxMSP()](http://monome.org/docs/app/package/)**
 - Routing the osc data from the monome to localhost(8000).
 
-**OSCulator**
+**[OSCulator](http://www.osculator.net/)**
 - Changing the data from localhost to qwerty keyboard keys for input.
+
+
+## Process
+- I first wanted to make the monome the main focus of the project. I wanted it to give visual feedback with the led and make the screen secondary.
+
+- I had set up a [php server](https://github.com/lsu-emdm/nx-AjaxDemo) to send osc signals from the monome to the computer and back to the monome to light up the leds
 
 
 
