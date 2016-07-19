@@ -584,5 +584,7 @@ Mousetrap.bind('<', function() {
 });
 
 Mousetrap.bind('?', function() {
-  vex.dialog.alert('Hi, try these shapes. <br> <img src="http://placehold.it/420x320" alt="Patterns" />');
+  // vex.dialog.alert('Hi. <br> <img src="http://placehold.it/420x320" alt="Patterns" />');
+  // vex.dialog.alert('Hi. <br> <img src="patterns.png" width="420" height="320" alt="Patterns" />');
+  vex.dialog.alert('Hi. Try these patterns. <img src="patterns.png" width="420" height="320" alt="Patterns" />');
 });
