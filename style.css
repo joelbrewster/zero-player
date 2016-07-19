@@ -6,15 +6,20 @@ body {
   background: radial-gradient(circle, #111111, #222222); /* Standard syntax */
 }
 
+/* Max the page too 10% */
+html,
+body {
+    height: 100%;
+}
+
 .nx {
   display:block;
   align: center;
 }
 
 .middle {
-  position: relative;
-  top: 30%;
-  transform: translateY(-30%);
+  padding-top: 3%;
+  padding-bottom: 7%;
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
   box-ordinal-group: 1;

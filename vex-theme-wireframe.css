@@ -115,26 +115,26 @@
 
 /* line 9, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 6%;
+  padding-bottom: 10%;
 }
 /* line 13, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-overlay {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(30, 30, 30, 0.8);
 }
 /* line 16, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-content {
   font-family: "Helvetica Neue", sans-serif;
-  background: white;
-  color: black;
-  border: 2px solid black;
-  padding: 2em;
+  background: #181818;
+  color: white;
+  border: 2px solid #424242;
+  padding: 5px;
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  width: 400px;
-  font-size: 1.1em;
-  line-height: 1.5em;
+  width: 530px;
+  font-size: 2em;
+  line-height: 1em;
 }
 /* line 29, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-content h1, .vex.vex-theme-wireframe .vex-content h2, .vex.vex-theme-wireframe .vex-content h3, .vex.vex-theme-wireframe .vex-content h4, .vex.vex-theme-wireframe .vex-content h5, .vex.vex-theme-wireframe .vex-content h6, .vex.vex-theme-wireframe .vex-content p, .vex.vex-theme-wireframe .vex-content ul, .vex.vex-theme-wireframe .vex-content li {
@@ -151,15 +151,15 @@
 .vex.vex-theme-wireframe .vex-close:before {
   position: absolute;
   content: "\00D7";
-  font-size: 40px;
+  font-size: 20px;
   font-weight: normal;
-  line-height: 80px;
-  height: 80px;
-  width: 80px;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
   text-align: center;
   top: 3px;
   right: 3px;
-  color: black;
+  color: #0099CC;
 }
 /* line 51, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-close:hover:before, .vex.vex-theme-wireframe .vex-close:active:before {
@@ -175,9 +175,9 @@
 }
 /* line 62, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input textarea, .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="date"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="datetime"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="datetime-local"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="email"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="month"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="number"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="password"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="search"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="tel"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="text"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="time"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="url"], .vex.vex-theme-wireframe .vex-dialog-form .vex-dialog-input input[type="week"] {
-  background: white;
+  background: #222222;
   width: 100%;
-  padding: 0.25em 0.67em;
+  /* padding: 0.25em 0.67em; */
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
@@ -244,14 +244,14 @@
 }
 /* line 104, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-dialog-button.vex-dialog-button-primary {
-  background: black;
-  color: white;
+  background: #767676;
+  color: #232323;
   border: 2px solid transparent;
 }
 /* line 109, ../sass/vex-theme-wireframe.sass */
 .vex.vex-theme-wireframe .vex-dialog-button.vex-dialog-button-secondary {
-  background: white;
-  color: black;
+  background: #222222;
+  color: white;
   border: 2px solid black;
 }
 
