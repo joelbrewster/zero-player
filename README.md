@@ -177,3 +177,9 @@ Mousetrap.bind('1', function() {
 ```
 - After demoing this app to several different people and people not getting what to do, I decided to add a modal on app startup and link the help function to a ? button and to a "?" keyboard shortcut.
 ``
+
+- It took a few days to get the loading order working with javascript and electron.
+  - When I loaded my index and js files in the electron app it would load them in different orders.
+  - I thought it was Tone.js causing problems but it turned out to be a common problem with jQuery and electron apps.
+I found a [post on stack overflow](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined) that fixed all my problems in 2 lines
+
