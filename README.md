@@ -138,21 +138,23 @@ Keyboard inputa(using keycodes was so tedious and sometimes didn't work with cer
 
 - I moved the information on the sides to be shown in a modal on page reload.
 
-## Roadblocks
-- I originally just wanted to get the position of the matrix logging to console.
+## Roadblocks and thoughts
+- After getting the matrix grid working, I just wanted to get the triggered positions of the matrix logging to console.
 
   ```
 if (data.grid[i][j])
 
   ```
-  - Changed.
+  - Changed to:
   ```
 if (data.grid[i][j] == 1)
   ```
 - It would return an object, not the grid[i][j]. I presumed it'd always be true, but it would return undefined, 0, and all the things I can do to the array. Silly mistake.
 
-## Keyboard input
-- Initially I had this type of thing:
+- Routing the monome with MaxMSP,then routing it to OSCulator, and then linking that to Mousetrap.js to trigger rows/columns on the screen is super clunky.
+  - I'd like to find a way to do this without relying on so many routes.
+
+- Initially I had this type of thing to trigger the rows/grids with the computer keyboard:
 ```
 window.addEventListener("keydown", checkKeyPressed, false);
 
@@ -165,7 +167,7 @@ function checkKeyPressed(e) {
   }
 }
 ```
-- I ended up going with mousetrap so speed along typing keys instead of using charcodes. Charcodes would sometimes work and sometimes not so deciding on using another js option was a good idea.
+- I ended up going with mousetrap.js to speed along typing keys instead of using charcodes. Charcodes would sometimes work and sometimes not so deciding on using another js option was a good idea.
 ```
 Mousetrap.bind('1', function() {
     matrix1.matrix[0][0] = 1;
@@ -173,3 +175,4 @@ Mousetrap.bind('1', function() {
     etc
 });
 ```
+- After demoing this app to several different people and people not getting what to do, I decided to add a modal on app startup and link the help function to a ? button and to a "?" keyboard shortcut.
