@@ -44,24 +44,24 @@ The overall goal was to make the user be able to interface with the app with min
 - Applying the envelope (ADSR).
 
 **[mousetrap.js](https://github.com/ccampbell/mousetrap)**
-Keyboard inputa(using keycodes was so tedious and sometimes didn't work with certain chrome extensions).
+Keyboard inputs (using key codes was so tedious and sometimes didn't work with certain chrome extensions).
 - all input is in keyboard.js
 
 **[Vex.js](http://github.hubspot.com/vex/api/advanced/)**
 - for a pretty modal help popup thing.
 
-**[MaxMSP()](http://monome.org/docs/app/package/)**
-- Routing the osc data from the monome to localhost(8000).
+**[MaxMSP()](http://[monome](http://monome.org/).org/docs/app/package/)**
+- Routing the osc data from the [monome](http://monome.org/) to localhost(8000).
 
 **[OSCulator](http://www.osculator.net/)**
 - Changing the data from localhost to qwerty keyboard keys for input.
 
 
 ## Process
-- I first wanted to make the monome the main focus of the project. I wanted it to give visual feedback with the led and make the screen secondary.
-- I had set up a [php server](https://github.com/lsu-emdm/nx-AjaxDemo) to send osc signals from the monome to the computer and back to the monome to light up the leds.
-- I then noticed if people used the monome they wouldn't look at the screen at all.
-- I thought if I was making this app to show a gui then people should look at that more. I just made the monome to give feedback only on button press.
+- I first wanted to make the [monome](http://monome.org/) the main focus of the project. I wanted it to give visual feedback with the led and make the screen secondary.
+- I had set up a [php server](https://github.com/lsu-emdm/nx-AjaxDemo) to send osc signals from the [monome](http://monome.org/) to the computer and back to the [monome](http://monome.org/) to light up the leds.
+- I then noticed if people used the [monome](http://monome.org/) they wouldn't look at the screen at all.
+- I thought if I was making this app to show a gui then people should look at that more. I just made the [monome](http://monome.org/) to give feedback only on button press.
 - I linked the computers keyboard to trigger events on the screen as well like a grid shown in the layout section below.
 - I wanted to package up the app into a something more portable with electron.
 
@@ -151,7 +151,7 @@ if (data.grid[i][j] == 1)
   ```
 - It would return an object, not the grid[i][j]. I presumed it'd always be true, but it would return undefined, 0, and all the things I can do to the array. Silly mistake.
 
-- Routing the monome with MaxMSP,then routing it to OSCulator, and then linking that to Mousetrap.js to trigger rows/columns on the screen is super clunky.
+- Routing the [monome](http://monome.org/) with MaxMSP,then routing it to OSCulator, and then linking that to Mousetrap.js to trigger rows/columns on the screen is super clunky.
   - I'd like to find a way to do this without relying on so many routes.
 
 - Initially I had this type of thing to trigger the rows/grids with the computer keyboard:
@@ -176,3 +176,4 @@ Mousetrap.bind('1', function() {
 });
 ```
 - After demoing this app to several different people and people not getting what to do, I decided to add a modal on app startup and link the help function to a ? button and to a "?" keyboard shortcut.
+``
