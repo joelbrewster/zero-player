@@ -16,6 +16,11 @@
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced "players", by creating patterns with particular properties.
 
+1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+2. Any live cell with two or three live neighbours lives on to the next generation.
+3. Any live cell with more than three live neighbours dies, as if by over-population.
+4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
 ## Examples of patterns
 Many different types of patterns occur in the Game of Life, including still lifes, oscillators, and patterns that translate themselves across the board ("spaceships"). Some frequently occurring examples of these three classes are shown below, with live cells shown in black, and dead cells shown in white.
 
@@ -62,7 +67,7 @@ Keyboard inputs (using key codes was so tedious and sometimes didn't work with c
 **[Vex.js](http://github.hubspot.com/vex/api/advanced/)**
 - for a pretty modal help popup thing.
 
-**[MaxMSP(http://monome.org/docs/app/package/)**
+**[MaxMSP](http://monome.org/docs/app/package/)**
 - Routing the osc data from the [monome](http://monome.org/) to localhost(8000).
 
 **[OSCulator](http://www.osculator.net/)**
@@ -201,3 +206,4 @@ I found a [post on stack overflow](http://stackoverflow.com/questions/32621988/e
 ## Future goals
 - I'd like to redo the modal popup and talk to an interface designer about how to make it more obvious what to do with the grid.
 - I'd like to implement some keyboard shortcuts to change the sound ADSR and type of wave form.
+- I really like the use of the monome, so having the monome osc data read by javascript without any routing apps would be amazing.
