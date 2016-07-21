@@ -1,5 +1,6 @@
 # zero-player
 [Download the app here](https://dl.dropboxusercontent.com/u/250610/zero-player-app.zip).
+[Use it online here](https://www.joelbrewster.com/zero-player/)
 
 ## Introduction
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
