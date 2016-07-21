@@ -4,7 +4,13 @@
 
 [Use it online here](https://www.joelbrewster.com/zero-player/).
 
-- You can use the mouse, the keyboard or something like a monome to interface with zero-player.
+- You can use the mouse, the keyboard or something like a [monome](https://en.wikipedia.org/wiki/Monome) to interface with zero-player.
+  - If you want to use the monome check out the monome folder in the repository.
+    - MaxMSP file for osc routing.
+    - OSCulator file for qwerty routing.
+    - Load both files and plug in the monome. Then in the MaxMSP path, change the MIDI output to Osculator in.
+    - Select the app or the web browser with zero-player in the foreground.
+    - Try to make the patterns presented on the modal with the monome.
 
 ## Introduction
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
