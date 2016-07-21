@@ -3,6 +3,8 @@
 
 [Use it online here](https://www.joelbrewster.com/zero-player/).
 
+- You can use the mouse, the keyboard or something like a monome to interface with zero-player.
+
 ## Introduction
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced "players", by creating patterns with particular properties.
@@ -53,7 +55,7 @@ Keyboard inputs (using key codes was so tedious and sometimes didn't work with c
 **[Vex.js](http://github.hubspot.com/vex/api/advanced/)**
 - for a pretty modal help popup thing.
 
-**[MaxMSP()](http://[monome](http://monome.org/).org/docs/app/package/)**
+**[MaxMSP(http://monome.org/docs/app/package/)**
 - Routing the osc data from the [monome](http://monome.org/) to localhost(8000).
 
 **[OSCulator](http://www.osculator.net/)**
@@ -186,3 +188,8 @@ Mousetrap.bind('1', function() {
   - I thought it was Tone.js causing problems but it turned out to be a common problem with jQuery and electron apps.
 I found a [post on stack overflow](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined) that fixed all my problems in 2 lines
 - I compiled the app from a guide on the [electron documentation](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md#os-x) site.
+
+
+## Future goals
+- I'd like to redo the modal popup and talk to an interface designer about how to make it more obvious what to do with the grid.
+- I'd like to implement some keyboard shortcuts to change the sound ADSR and type of wave form.
