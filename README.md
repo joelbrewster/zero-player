@@ -1,5 +1,6 @@
 # zero-player
 [Download the app here](https://dl.dropboxusercontent.com/u/250610/zero-player-app.zip).
+- Remember to change the gatekeeper settings: ["Allow applications downloaded from: Anywhere"](https://support.apple.com/en-au/HT202491).
 
 [Use it online here](https://www.joelbrewster.com/zero-player/).
 
