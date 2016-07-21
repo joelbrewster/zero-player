@@ -185,4 +185,4 @@ Mousetrap.bind('1', function() {
   - When I loaded my index and js files in the electron app it would load them in different orders.
   - I thought it was Tone.js causing problems but it turned out to be a common problem with jQuery and electron apps.
 I found a [post on stack overflow](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined) that fixed all my problems in 2 lines
-
+- I compiled the app from a guide on the [electron documentation](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md#os-x) site.
