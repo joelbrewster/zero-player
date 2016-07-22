@@ -3,6 +3,7 @@
 - Remember to change the gatekeeper settings: ["Allow applications downloaded from: Anywhere"](https://support.apple.com/en-au/HT202491).
 
 - Audio doesn't work in Safari. Try and use Google chrome.
+
 [Use it online here](http://www.joelbrewster.com/zero-player/).
 
 - You can use the mouse, the keyboard or something like a [monome](https://en.wikipedia.org/wiki/Monome) to interface with zero-player.
