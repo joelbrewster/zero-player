@@ -61,7 +61,7 @@ The overall goal was to make the user be able to interface with the app with min
 - Applying the envelope (ADSR).
 
 **[mousetrap.js](https://github.com/ccampbell/mousetrap)**
-Keyboard inputs (using key codes was so tedious and sometimes didn't work with certain chrome extensions).
+- Keyboard inputs (using key codes was so tedious and sometimes didn't work with certain chrome extensions).
 - all input is in keyboard.js
 
 **[Vex.js](http://github.hubspot.com/vex/api/advanced/)**
