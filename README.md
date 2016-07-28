@@ -1,5 +1,5 @@
 # zero-player
-[Download the app here](https://dl.dropboxusercontent.com/u/250610/zero-player-app.zip).
+[Download the app here](http://tinyurl.com/zero-player).
 - Remember to change the gatekeeper settings: ["Allow applications downloaded from: Anywhere"](https://support.apple.com/en-au/HT202491).
 
 - Audio doesn't work in Safari. Try and use Google chrome.
