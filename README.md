@@ -1,4 +1,6 @@
 # zero-player
+This app is an interface that creates random melodies and chords from cellular automation patterns. A user can interact with the app via a monome (OSC device), computer keyboard or with just the mouse. When the user alters the grid, certain different melodies or chords will be generated and played back.
+
 [Download the app here](http://tinyurl.com/zero-player).
 - Remember to change the gatekeeper settings: ["Allow applications downloaded from: Anywhere"](https://support.apple.com/en-au/HT202491).
 
@@ -14,7 +16,7 @@
     - Select the app or the web browser with zero-player in the foreground.
     - Try to make the patterns presented on the modal with the monome.
 
-## Introduction
+## Game of Life
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced "players", by creating patterns with particular properties.
 
