@@ -1,11 +1,12 @@
-// gobal variable monoGrid
 // Use monoGrid later to send osc data
 var monoGrid = new Array(8);
 
-// init monoGrid... maybe move to init function when have one
-for (var i = 0, n = 8; i < n; i++) {
+n = 8;
+m = 8;
+
+for (var i = 0; i < n; i++) {
   monoGrid[i] = new Array(8);
-  for (var j = 0, m = 8; j < m; j++) {
+  for (var j = 0; j < m; j++) {
     monoGrid[i][j] = 0;
   }
 }
