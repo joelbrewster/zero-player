@@ -1,7 +1,7 @@
 # zero-player
 This app is an interface that creates random melodies and chords from cellular automation patterns. A user can interact with the app via a monome (OSC device), computer keyboard or with just the mouse. When the user alters the grid, certain different melodies or chords will be generated and played back.
 
-[Download the app here](http://tinyurl.com/zero-player).
+[Download the app here](https://github.com/joelbrewster/zero-player-app/releases/download/0.1/zero-player.zip).
 - Remember to change the gatekeeper settings: ["Allow applications downloaded from: Anywhere"](https://support.apple.com/en-au/HT202491).
 
 - Audio doesn't work in Safari. Try and use Google chrome.
