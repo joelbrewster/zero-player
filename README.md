@@ -6,7 +6,7 @@ This app is an interface that creates random melodies and chords from cellular a
 
 - Audio doesn't work in Safari. Try and use Google chrome.
 
-[Use it online here](http://www.joelbrewster.com/zero-player/).
+[Use it online here](https://joelbrewster.github.io/zero-player/index.html).
 
 - You can use the mouse, the keyboard or something like a [monome](https://en.wikipedia.org/wiki/Monome) to interface with zero-player.
   - If you want to use the monome check out the monome folder in the repository.
@@ -76,16 +76,6 @@ The overall goal was to make the user be able to interface with the app with min
 
 **[OSCulator](http://www.osculator.net/)**
 - Changing the data from localhost to qwerty keyboard keys for input.
-
-
-## Process
-- I first wanted to make the [monome](http://monome.org/) the main focus of the project. I wanted it to give visual feedback with the led and make the screen secondary.
-- I had set up a [php server](https://github.com/lsu-emdm/nx-AjaxDemo) to send osc signals from the [monome](http://monome.org/) to the computer and back to the [monome](http://monome.org/) to light up the leds.
-- I then noticed if people used the [monome](http://monome.org/) they wouldn't look at the screen at all.
-- I thought if I was making this app to show a gui then people should look at that more. I just made the [monome](http://monome.org/) to give feedback only on button press.
-- I linked the computers keyboard to trigger events on the screen as well like a grid shown in the layout section below.
-- I wanted to package up the app into a something more portable with electron.
-
 
 ## Layout
 ```
@@ -157,57 +147,3 @@ The overall goal was to make the user be able to interface with the app with min
         └─────────────────────────────────────────────────┘
 ```
 
-- I moved the information on the sides to be shown in a modal on page reload.
-
-## Roadblocks and thoughts
-- After getting the matrix grid working, I just wanted to get the triggered positions of the matrix logging to console.
-
-  ```
-if (data.grid[i][j])
-
-  ```
-  - Changed to:
-  ```
-if (data.grid[i][j] == 1)
-  ```
-- It would return an object, not the grid[i][j]. I presumed it'd always be true, but it would return undefined, 0, and all the things I can do to the array. Silly mistake.
-
-- Routing the [monome](http://monome.org/) with MaxMSP,then routing it to OSCulator, and then linking that to Mousetrap.js to trigger rows/columns on the screen is super clunky.
-  - I'd like to find a way to do this without relying on so many routes.
-
-- Initially I had this type of thing to trigger the rows/grids with the computer keyboard:
-```
-window.addEventListener("keydown", checkKeyPressed, false);
-
-function checkKeyPressed(e) {
-
-  if (e.keyCode == "49") {
-    console.log("1 was pressed");
-    matrix1.matrix[0][0] = 1;
-    etc
-  }
-}
-```
-- I ended up going with mousetrap.js to speed along typing keys instead of using charcodes. Charcodes would sometimes work and sometimes not so deciding on using another js option was a good idea.
-```
-Mousetrap.bind('1', function() {
-    matrix1.matrix[0][0] = 1;
-    console.log("1 pressed");
-    etc
-});
-```
-- After demoing this app to several different people and people not getting what to do, I decided to add a modal on app startup and link the help function to a ? button and to a "?" keyboard shortcut.
-``
-
-- It took a few days to get the loading order working with javascript and electron.
-  - When I loaded my index and js files in the electron app it would load them in different orders.
-  - I thought it was Tone.js causing problems but it turned out to be a common problem with jQuery and electron apps.
-I found a [post on stack overflow](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined) that fixed all my problems in 2 lines
-- I compiled the app from a guide on the [electron documentation](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md#os-x) site.
-- For presenting this project I used a [frameless window](https://github.com/electron/electron/blob/master/docs/api/frameless-window.md) so it looked more minimal and people couldn't really close it from misclicks.
-
-
-## Future goals
-- I'd like to redo the modal popup and talk to an interface designer about how to make it more obvious what to do with the grid.
-- I'd like to implement some keyboard shortcuts to change the sound ADSR and type of wave form.
-- I really like the use of the monome, so having the monome osc data read by javascript without any routing apps would be amazing.
