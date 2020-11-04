@@ -6,7 +6,7 @@ This app is an interface that creates random melodies and chords from cellular a
 
 - Audio doesn't work in Safari. Try and use Google chrome.
 
-[Use it online here](https://joelbrewster.github.io/zero-player/index.html).
+[Use it online here](https://zero-player.netlify.app/).
 
 - You can use the mouse, the keyboard or something like a [monome](https://en.wikipedia.org/wiki/Monome) to interface with zero-player.
   - If you want to use the monome check out the monome folder in the repository.
