@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Zero-player</title>
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-    <script type="text/javascript" src="js/tone.js"></script>
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/vex.combined.min.js"></script>
     <script type="text/javascript" src="js/nexusUI.js"></script>
     <script type="text/javascript" src="js/mousetrap.js"></script>
     <script type="text/javascript" src="js/keyboard.js"></script>
     <script type="text/javascript" src="js/help.js"></script>
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/vex.combined.min.js"></script>
-    <script>vex.defaultOptions.className = 'vex-theme-wireframe';</script>
-    <script type="text/javascript" defer src="js/app.js" ></script>
-
-    <script>if (window.module) module = window.module;</script>
+    <script type="text/javascript" src="js/tone.js"></script>
+    <script>
+      vex.defaultOptions.className = "vex-theme-wireframe";
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      if (window.module) module = window.module;
+    </script>
     <link rel="stylesheet" type="text/css" href="css/vex.css" />
     <link rel="stylesheet" type="text/css" href="css/vex-theme-wireframe.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
   </head>
   <body>
-    <div class=left>
+    <div class="left">
       <button class="help" onClick="help()">?</button>
     </div>
     <div class="middle">
-      <canvas nx="envelope"style="width:520px;height:60px;margin:2px auto 0"></canvas>
-      <canvas nx="matrix" style="width:520px;height:470px;margin:2px auto"></canvas>
+      <canvas
+        nx="envelope"
+        style="width: 520px; height: 60px; margin: 2px auto 0"
+      ></canvas>
+      <canvas
+        nx="matrix"
+        style="width: 520px; height: 470px; margin: 2px auto"
+      ></canvas>
     </div>
-    <div class=right>
-    </div>
+    <div class="right"></div>
   </body>
 </html>
